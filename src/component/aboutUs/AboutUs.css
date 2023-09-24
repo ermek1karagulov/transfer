@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+.themeSvyaz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.miniConnection {
+  margin-top: 5rem;
+}
+
+.hfourConnection {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  font-family: "Open Sans", sans-serif;
+}
+
+.divSvyazConnection {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+  font-family: "Open Sans", sans-serif;
+}
+
+.threeDivs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.miniTelegram {
+  background: #fafbff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  width: 200px;
+}
+
+.miniMail {
+  cursor: pointer;
+  background: #fafbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+@media (max-width: 900px) {
+  .threeDivs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .themeSvyaz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .miniConnection {
+    margin-top: 2rem;
+  }
+
+  .hfourConnection {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .divSvyazConnection {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #012970;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .threeDivs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .miniTelegram {
+    background: #fafbff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    width: 200px;
+  }
+
+  .miniMail {
+    cursor: pointer;
+    background: #fafbff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+
+  .btnTo {
+    margin-bottom: 9rem;
+  }
+}
