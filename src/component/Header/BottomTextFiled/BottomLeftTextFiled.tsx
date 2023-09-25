@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import react, { useState, useEffect } from "react";
 import axios from "axios";
-import { API } from "../../../const";
+import { API } from "../../../api";
 
 enum TransactionType {
   SELL = "SELL",
@@ -49,17 +49,22 @@ export default function TopLeftTextField() {
   });
 
   useEffect(() => {
-    axios.get(API).then((v) => {
-      console.log(v.data);
+    API.get("").then((v) => {
+      const optima_bank = v.data.find((bank: any) => bank.slug === "optima");
+      console.log(optima_bank);
 
       setRate({
-        RUB: 1,
-        USD: v.data.Valute.USD.Value,
-        EUR: v.data.Valute.EUR.Value,
+        RUB: +optima_bank.rates[0].sell_rub,
+        USD: +optima_bank.rates[0].buy_usd,
+        EUR: +optima_bank.rates[0].buy_eur,
+      });
+      setInputData({
+        sell: +optima_bank.rates[0].sell_rub,
+        buy: +optima_bank.rates[0].buy_usd,
       });
     });
   }, []);
-  console.log(inputData);
+  console.log(rate);
 
   return (
     <div>
@@ -82,7 +87,8 @@ export default function TopLeftTextField() {
               }}
               value={inputData.sell}
               onChange={(e) => {
-                console.log(rate[selectedBuyCarrency] / Number(e.target.value));
+                //@ts-ignore
+                if (!/\d+/.test(Number(e.target.value))) return;
 
                 setInputData((v) => ({
                   ...v,
@@ -136,15 +142,18 @@ export default function TopLeftTextField() {
               }}
               variant="standard"
               value={inputData.buy}
-              onChange={(e) =>
+              onChange={(e) => {
+                //@ts-ignore
+                if (!/\d+/.test(Number(e.target.value))) return;
+
                 setInputData((v) => ({
                   ...v,
                   buy: +e.target.value,
                   sell: e.target.value
                     ? rate[selectedBuyCarrency] * Number(e.target.value)
                     : 0,
-                }))
-              }
+                }));
+              }}
             />
           </div>
         </Box>
@@ -164,9 +173,14 @@ export default function TopLeftTextField() {
               defaultValue="РУБ"
               variant="standard"
               value={selectedBuyCarrency}
-              onChange={(e) =>
-                setSelectedBuyCarrency(e.target.value as CurrencyType)
-              }
+              onChange={(e) => {
+                setSelectedBuyCarrency(e.target.value as CurrencyType);
+                setInputData((v) => ({
+                  ...v,
+                  buy: rate[e.target.value as CurrencyType],
+                  sell: rate[CurrencyType.RUB],
+                }));
+              }}
             >
               <MenuItem value={CurrencyType.USD}>{CurrencyType.USD}</MenuItem>
               <MenuItem value={CurrencyType.EUR}>{CurrencyType.EUR}</MenuItem>

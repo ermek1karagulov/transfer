@@ -4,7 +4,6 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import react, { useState, useEffect } from "react";
 import axios from "axios";
-import { API } from "../../../const";
 
 enum TransactionType {
   SELL = "SELL",
@@ -42,18 +41,6 @@ export default function TopLeftTextField() {
     USD: 0,
     EUR: 0,
   });
-
-  useEffect(() => {
-    axios.get(API).then((v) => {
-      // console.log(v);
-      const RUB = v.data.USD / 1;
-      setRate({
-        RUB,
-        USD: v.data.USD,
-        EUR: v.data.EUR,
-      });
-    });
-  }, []);
 
   return (
     <div style={{ display: "flex" }}>
