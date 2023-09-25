@@ -39,7 +39,7 @@ export default function TopLeftTextField() {
     EUR: 0,
   });
 
-  const [selectedBuyCarrency, setSelectedBuyCarrency] = useState(
+  const [selectedBuyCurrency, setSelectedBuyCarrency] = useState(
     CurrencyType.USD
   );
 
@@ -54,13 +54,13 @@ export default function TopLeftTextField() {
       console.log(optima_bank);
 
       setRate({
-        RUB: +optima_bank.rates[0].sell_rub,
-        USD: +optima_bank.rates[0].buy_usd,
-        EUR: +optima_bank.rates[0].buy_eur,
+        RUB: +optima_bank.rates[0].buy_rub,
+        USD: +optima_bank.rates[0].sell_usd,
+        EUR: +optima_bank.rates[0].sell_eur,
       });
       setInputData({
-        sell: +optima_bank.rates[0].sell_rub,
-        buy: +optima_bank.rates[0].buy_usd,
+        sell: +optima_bank.rates[0].buy_rub,
+        buy: +optima_bank.rates[0].sell_usd,
       });
     });
   }, []);
@@ -89,13 +89,13 @@ export default function TopLeftTextField() {
               onChange={(e) => {
                 //@ts-ignore
                 if (!/\d+/.test(Number(e.target.value))) return;
+                const som = Number(e.target.value) * rate[CurrencyType.RUB];
+                console.log(som);
 
                 setInputData((v) => ({
                   ...v,
                   sell: Number(e.target.value),
-                  buy: e.target.value
-                    ? Number(e.target.value) / rate[selectedBuyCarrency]
-                    : 0,
+                  buy: som ? Number(som) / rate[selectedBuyCurrency] : 0,
                 }));
               }}
               variant="standard"
@@ -150,7 +150,7 @@ export default function TopLeftTextField() {
                   ...v,
                   buy: +e.target.value,
                   sell: e.target.value
-                    ? rate[selectedBuyCarrency] * Number(e.target.value)
+                    ? rate[selectedBuyCurrency] * Number(e.target.value)
                     : 0,
                 }));
               }}
@@ -172,7 +172,7 @@ export default function TopLeftTextField() {
               select
               defaultValue="РУБ"
               variant="standard"
-              value={selectedBuyCarrency}
+              value={selectedBuyCurrency}
               onChange={(e) => {
                 setSelectedBuyCarrency(e.target.value as CurrencyType);
                 setInputData((v) => ({
