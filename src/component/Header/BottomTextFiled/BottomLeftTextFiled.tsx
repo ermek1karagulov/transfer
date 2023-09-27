@@ -143,8 +143,16 @@ export default function BottomLeftTextField() {
             16000
           </span>
         </div>
+        <div className="wait">
+          Ожидаемое время доставки:
+          <span
+            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
+          >
+            1 час
+          </span>
+        </div>
       </div>
-      <div style={{ display: "flex", padding: "0rem 1rem 1rem 1rem" }}>
+      <div style={{ display: "flex", padding: "0rem 1rem 0rem 1rem" }}>
         <Box
           component="form"
           sx={{
@@ -213,22 +221,6 @@ export default function BottomLeftTextField() {
         </Box>
       </div>
       <div className="bottomText" style={{ padding: "0rem 1rem 1rem 1rem" }}>
-        {/* <div className="ekonom">
-          Вы можете секономит до:
-          <span
-            style={{ fontWeight: "700", color: "black", marginLeft: "5px" }}
-          >
-            20.00 RUB
-          </span>
-        </div> */}
-        <div className="wait">
-          Ожидаемое время доставки:
-          <span
-            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
-          >
-            1 час
-          </span>
-        </div>
         <div className="btnDivv">
           <ButtonStart />
         </div>

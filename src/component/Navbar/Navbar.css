@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.mainNaavbar {
+  display: flex;
+  justify-content: center;
+  background: #1976d2;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.cashQoin {
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  display: flex;
+  align-items: center;
+  animation: myNavbar 10s ease 0s infinite normal forwards;
+}
+
+@keyframes myNavbar {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 .mainDiv {
   margin-top: 0px;
-  background: #9fe870;
+  background: white;
 }
 
 .miniMainDiv {
@@ -10,7 +10,7 @@
   justify-content: center;
   width: 100%;
   gap: 1rem;
-  height: 100vh;
+  height: 600px;
 }
 
 .mainTwoTextFiled {
@@ -53,7 +53,7 @@
   background-color: #fff;
   border-radius: 15px;
   border: 2px solid darkslategrey;
-  width: 100%;
+  /* width: 100%; */
   padding: 10px;
   margin-top: 3rem;
 }
@@ -64,7 +64,6 @@
 
 @media (max-width: 600px) {
   .mainDiv {
-    background: #9fe870;
     margin-top: 0px;
   }
 

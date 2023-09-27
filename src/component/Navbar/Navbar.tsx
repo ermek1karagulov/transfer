@@ -1,10 +1,10 @@
 import React from "react";
-import NavbarMUI from "./NavbarMUI";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
-      <NavbarMUI />
+    <div className="mainNaavbar">
+      <div className="cashQoin">Cash Qoin</div>
     </div>
   );
 };

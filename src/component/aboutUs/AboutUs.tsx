@@ -9,7 +9,7 @@ import { color } from "framer-motion";
 
 const AboutUs = () => {
   return (
-    <div className="mainConnection">
+    <div className="mainConnection" style={{ marginBottom: "2rem" }}>
       <div className="miniConnection">
         <div className="themeSvyaz">
           <div>

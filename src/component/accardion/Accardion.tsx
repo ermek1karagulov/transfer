@@ -54,7 +54,10 @@ export default function AccordionMy() {
     };
 
   return (
-    <div style={{ marginTop: "4rem" }}>
+    <div
+      style={{ marginTop: "4rem", display: "flex", flexDirection: "column" }}
+    >
+      <div className="faqq">FAQ</div>
       <div
         style={{
           maxWidth: "1200px",
@@ -64,35 +67,10 @@ export default function AccordionMy() {
         }}
       >
         <Accordion
-          expanded={expanded === "panel1"}
-          onChange={handleChange("panel1")}
-        >
-          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography className="typograf">
-              Почему Вы должны выбирать нас?
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <span style={{ fontWeight: "700" }}> Быстрота и надежность:</span>
-              Мы понимаем, что время - деньги, поэтому мы гарантируем быструю
-              обработку и надежную доставку ваших средств. Ваши деньги попадут в
-              нужное место в точное время.Прозрачность и доступность:
-            </Typography>
-            <Typography>
-              <span style={{ fontWeight: "700" }}>Глобальное присутствие:</span>
-              Наша сеть охватывает Европу, США и ряд других стран, что позволяет
-              нам предоставлять услуги в самых разных частях мира. Независимо от
-              вашего местоположения, мы всегда рядом, чтобы помочь вам сделать
-              финансовые операции легкими и удобными
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
           expanded={expanded === "panel2"}
           onChange={handleChange("panel2")}
         >
-          <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
             <Typography>Каким путём отправляются деньги?</Typography>
           </AccordionSummary>
           <AccordionDetails>
