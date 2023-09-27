@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+.mainTextFieldDiv {
+  /* background: #a1a4a4; */
+  border-radius: 10px;
+}
+
+.centerText {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 0.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.komission {
+  color: gray;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.minimalSum {
+  color: gray;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+.bottomText {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 0.6rem;
+}
+
+.ekonom {
+  color: gray;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.wait {
+  color: gray;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btnDivv {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  animation: myAnim 7s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}

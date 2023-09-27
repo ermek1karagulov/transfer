@@ -2,10 +2,7 @@ import { motion } from "framer-motion";
 
 import React from "react";
 import "../Header/Header.css";
-import TopLeftTextField from "./TopTextFiled/TopLeftTextField";
-import TopRightTextFiled from "./TopTextFiled/TopRightTextFiled";
 import BottomLeftTextField from "./BottomTextFiled/BottomLeftTextFiled";
-import BottomRightTextFiled from "./BottomTextFiled/BottomRightTextFiled";
 //@ts-ignore
 import arrow from "./../img/arrow.svg";
 
@@ -28,11 +25,13 @@ const Header = () => {
         <div className="trrrr">
           <div>
             <motion.h2 className="theme" custom={1} variants={textAnimation}>
-              Переводите деньги зарубеж легко и просто!
+              Мгновенные денежные переводы в Зарубеж:
             </motion.h2>
           </div>
           <motion.div className="text" custom={2} variants={textAnimation}>
-            Мгновенные, дещёвые и надеженые переводы денег между СНГ и Европой.
+            Наш сервис предоставляет вам мгновенный доступ к переводам денег в
+            Европу и США. Забудьте о сложных процедурах и высоких комиссиях.
+            Отправьте деньги в любую точку мира легко и быстро!
           </motion.div>
         </div>
         <motion.div
@@ -42,21 +41,10 @@ const Header = () => {
         >
           <div className="textFielder">
             <div>
-              {/* <div className="topTextFiled">
-                <div>
-                  <TopLeftTextField />
-                </div>
-              </div>
-              <div style={{ display: "flex", justifyContent: "center" }}>
-                <img src={arrow} />
-              </div> */}
               <div className="bottomTextFiled">
                 <div>
                   <BottomLeftTextField />
                 </div>
-              </div>
-              <div className="pharagraf">
-                *Минимальная сумма для перевода денег состовляет 16000 RUB.
               </div>
             </div>
           </div>

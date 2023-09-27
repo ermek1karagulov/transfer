@@ -5,6 +5,8 @@ import MenuItem from "@mui/material/MenuItem";
 import react, { useState, useEffect } from "react";
 import axios from "axios";
 import { API } from "../../../api";
+import "./BottomLeftTextField.css";
+import ButtonStart from "./ButtonStart";
 
 enum TransactionType {
   SELL = "SELL",
@@ -32,7 +34,7 @@ const currencies = [
   },
 ];
 
-export default function TopLeftTextField() {
+export default function BottomLeftTextField() {
   const [rate, setRate] = useState({
     RUB: 0,
     USD: 0,
@@ -44,8 +46,8 @@ export default function TopLeftTextField() {
   );
 
   const [inputData, setInputData] = useState({
-    sell: 1,
-    buy: 96,
+    sell: 0,
+    buy: 0,
   });
 
   useEffect(() => {
@@ -58,17 +60,17 @@ export default function TopLeftTextField() {
         USD: +optima_bank.rates[0].sell_usd,
         EUR: +optima_bank.rates[0].sell_eur,
       });
-      setInputData({
-        sell: +optima_bank.rates[0].buy_rub,
-        buy: +optima_bank.rates[0].sell_usd,
-      });
+      // setInputData({
+      //   sell: +optima_bank.rates[0].buy_rub,
+      //   buy: +optima_bank.rates[0].sell_usd,
+      // });
     });
   }, []);
   console.log(rate);
 
   return (
-    <div>
-      <div style={{ display: "flex" }}>
+    <div className="mainTextFieldDiv">
+      <div style={{ display: "flex", padding: "1rem 1rem 0rem 1rem" }}>
         <Box
           component="form"
           sx={{
@@ -79,9 +81,10 @@ export default function TopLeftTextField() {
         >
           <div>
             <TextField
-              id="standard-number"
+              id="outlined-basic"
               label="Отправляете"
-              // type="number"
+              variant="outlined"
+              style={{ width: "95%" }}
               InputLabelProps={{
                 shrink: true,
               }}
@@ -90,15 +93,15 @@ export default function TopLeftTextField() {
                 //@ts-ignore
                 if (!/\d+/.test(Number(e.target.value))) return;
                 const som = Number(e.target.value) * rate[CurrencyType.RUB];
-                console.log(som);
-
+                const converted = som
+                  ? Number(som) / rate[selectedBuyCurrency]
+                  : 0;
                 setInputData((v) => ({
                   ...v,
                   sell: Number(e.target.value),
-                  buy: som ? Number(som) / rate[selectedBuyCurrency] : 0,
+                  buy: converted - (converted / 100) * 5,
                 }));
               }}
-              variant="standard"
             />
           </div>
         </Box>
@@ -115,7 +118,7 @@ export default function TopLeftTextField() {
               id="standard-select-currency"
               label="валюта"
               select
-              variant="standard"
+              variant="outlined"
               value={CurrencyType.RUB}
             >
               <MenuItem value={CurrencyType.RUB}>{CurrencyType.RUB}</MenuItem>
@@ -123,7 +126,25 @@ export default function TopLeftTextField() {
           </div>
         </Box>
       </div>
-      <div style={{ display: "flex" }}>
+      <div className="centerText" style={{ padding: "1rem" }}>
+        {/* <div className="komission">
+          Комиссия за перевод:
+          <span
+            style={{ fontWeight: "700", color: "black", marginLeft: "5px" }}
+          >
+            5.00%
+          </span>
+        </div> */}
+        <div className="minimalSum">
+          Минимальная сумма перевода:
+          <span
+            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
+          >
+            16000
+          </span>
+        </div>
+      </div>
+      <div style={{ display: "flex", padding: "0rem 1rem 1rem 1rem" }}>
         <Box
           component="form"
           sx={{
@@ -134,26 +155,29 @@ export default function TopLeftTextField() {
         >
           <div>
             <TextField
-              id="standard-number"
-              label="Получает"
-              // defaultValue={"15000"}
+              style={{ width: "95%" }}
+              id="outlined-basic"
+              label="Получатель получает"
+              variant="outlined"
               InputLabelProps={{
                 shrink: true,
               }}
-              variant="standard"
               value={inputData.buy}
-              onChange={(e) => {
-                //@ts-ignore
-                if (!/\d+/.test(Number(e.target.value))) return;
+              // onChange={(e) => {
+              //   //@ts-ignore
+              //   if (!/\d+/.test(Number(e.target.value))) return;
 
-                setInputData((v) => ({
-                  ...v,
-                  buy: +e.target.value,
-                  sell: e.target.value
-                    ? rate[selectedBuyCurrency] * Number(e.target.value)
-                    : 0,
-                }));
-              }}
+              //   const som = Number(e.target.value) * rate[selectedBuyCurrency];
+              //   const converted = som
+              //     ? Number(som) / rate[CurrencyType.RUB]
+              //     : 0;
+
+              //   setInputData((v) => ({
+              //     ...v,
+              //     buy: +e.target.value,
+              //     sell: converted + (converted / 100) * 5,
+              //   }));
+              // }}
             />
           </div>
         </Box>
@@ -167,11 +191,11 @@ export default function TopLeftTextField() {
         >
           <div>
             <TextField
-              id="standard-select-currency"
-              label="валюта"
+              id="outlined-select-currency-native"
               select
+              label="валюта"
               defaultValue="РУБ"
-              variant="standard"
+              variant="outlined"
               value={selectedBuyCurrency}
               onChange={(e) => {
                 setSelectedBuyCarrency(e.target.value as CurrencyType);
@@ -187,6 +211,27 @@ export default function TopLeftTextField() {
             </TextField>
           </div>
         </Box>
+      </div>
+      <div className="bottomText" style={{ padding: "0rem 1rem 1rem 1rem" }}>
+        {/* <div className="ekonom">
+          Вы можете секономит до:
+          <span
+            style={{ fontWeight: "700", color: "black", marginLeft: "5px" }}
+          >
+            20.00 RUB
+          </span>
+        </div> */}
+        <div className="wait">
+          Ожидаемое время доставки:
+          <span
+            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
+          >
+            1 час
+          </span>
+        </div>
+        <div className="btnDivv">
+          <ButtonStart />
+        </div>
       </div>
     </div>
   );

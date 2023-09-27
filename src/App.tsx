@@ -7,12 +7,15 @@ import Services from "./component/Services/Services";
 import AboutUs from "./component/aboutUs/AboutUs";
 import "./App.css";
 import Footer from "./component/footer/Footer";
+import AccordionMy from "./component/accardion/Accardion";
+
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Header />
       <CurrantRate />
+      <AccordionMy />
       <Information />
       {/* <Services /> */}
       <AboutUs />

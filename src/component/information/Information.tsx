@@ -28,7 +28,7 @@ const Information = () => {
         style={{ gap: "0.5rem", marginTop: "3rem" }}
       >
         <div>
-          <div className="bgInfo" style={{ marginTop: "2rem" }}>
+          <div className="bgInfo" style={{ marginTop: "1rem" }}>
             <div
               style={{
                 width: "100%",
