@@ -64,7 +64,7 @@ export default function TextFieldMessages() {
       </div>
       <div>
         <TextField
-          label="Тема сообщения"
+          label="Ваше сообщения"
           style={{ width: "96%" }}
           className="textFieldTwo"
           id="outlined-multiline-static"

@@ -39,7 +39,7 @@ const Information = () => {
             >
               <h3 className="hthre">КТО МЫ?</h3>
               <p className="pInfo">
-                <span style={{ fontWeight: "700" }}>cashqoin.com</span> - ваш
+                <span style={{ fontWeight: "700" }}>cashqoen.com</span> - ваш
                 надежный партнер в мире международных финансовых операций. Нашей
                 миссией является обеспечение быстрой и удобной передачи средств
                 в Европу и США. Независимо от того, нужно ли вам отправить

@@ -63,36 +63,37 @@
 @media (max-width: 600px) {
   .mainNaavbar {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
     background: #f7f7f8;
     text-align: center;
     height: 90px;
     width: 100%;
     font-size: 2rem;
+    margin-bottom: 3rem;
   }
 
   .triDiv {
     display: flex;
-    justify-content: center;
-    gap: 0.5rem;
+    justify-content: space-evenly;
     font-weight: 600;
+    padding: 0.5rem 0rem;
   }
 
   .oNAs {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: #012970;
   }
 
   .FAQtriDiv {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: #012970;
   }
 
   .svyaztri {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: #012970;
   }
@@ -101,7 +102,7 @@
     font-family: "Alfa Slab One", cursive;
     color: black;
     display: flex;
-    align-items: center;
+    justify-content: center;
     animation: myNavbar 10s ease 0s infinite normal forwards;
     cursor: pointer;
   }

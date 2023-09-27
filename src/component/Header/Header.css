@@ -77,6 +77,7 @@
     height: 500px;
     margin: 0 auto;
     margin-bottom: 3rem;
+    /* margin-top: 2rem; */
   }
   .trrrr {
     width: 100%;
@@ -105,7 +106,7 @@
     text-align: center;
     text-wrap: wrap;
     font-family: "Open Sans", sans-serif;
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
   }
 
   .topTextFiled {

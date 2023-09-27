@@ -23,17 +23,15 @@ const Header = () => {
     <motion.div initial="hidden" whileInView="visible" className="mainDiv">
       <div className="miniMainDiv">
         <div className="trrrr">
-          <div>
-            <motion.h2 className="theme" custom={1} variants={textAnimation}>
-              Мгновенные денежные переводы в Зарубеж:
-            </motion.h2>
-          </div>
-          <motion.div className="text" custom={2} variants={textAnimation}>
+          <motion.h2 className="theme" custom={1} variants={textAnimation}>
+            Мгновенные денежные переводы в Зарубеж:
+          </motion.h2>
+        </div>
+        {/* <motion.div className="text" custom={2} variants={textAnimation}>
             Наш сервис предоставляет вам мгновенный доступ к переводам денег в
             Европу и США. Забудьте о сложных процедурах и высоких комиссиях.
             Отправьте деньги в любую точку мира легко и быстро!
-          </motion.div>
-        </div>
+          </motion.div> */}
         <motion.div
           custom={3}
           variants={textAnimation}
