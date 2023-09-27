@@ -53,11 +53,12 @@ export default function AccordionMy() {
   return (
     <div
       style={{
-        marginTop: "3rem",
-        margin: "0 auto",
+        marginTop: "4rem",
+        // margin: "0 auto",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        marginBottom: "2rem",
       }}
     >
       <div className="faqq">FAQ</div>

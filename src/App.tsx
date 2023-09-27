@@ -12,17 +12,23 @@ function App() {
         <div className="cashQoin">CashQoin</div>
         <div className="triDiv">
           <div className="oNAs">
-            <a href="#onas" style={{ textDecoration: "none" }}>
+            <a
+              href="#onas"
+              style={{ textDecoration: "none", color: "#012970" }}
+            >
               О нас
             </a>
           </div>
           <div className="FAQtriDiv">
-            <a href="#Fag" style={{ textDecoration: "none" }}>
+            <a href="#Fag" style={{ textDecoration: "none", color: "#012970" }}>
               FAQ
             </a>
           </div>
           <div className="svyaztri">
-            <a href="#svyaz" style={{ textDecoration: "none" }}>
+            <a
+              href="#svyaz"
+              style={{ textDecoration: "none", color: "#012970" }}
+            >
               Связаться
             </a>
           </div>
