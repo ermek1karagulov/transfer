@@ -8,6 +8,7 @@ import MuiAccordionSummary, {
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import "./Accardion.css";
+import { motion } from "framer-motion";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -43,6 +44,17 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function AccordionMy() {
+  const animationScroll = {
+    hidden: {
+      y: 10,
+      opacity: 0,
+    },
+    visible: (custom: number) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.2 },
+    }),
+  };
   const [expanded, setExpanded] = React.useState<string | false>("panel1");
 
   const handleChange =
@@ -51,84 +63,110 @@ export default function AccordionMy() {
     };
 
   return (
-    <div
-      style={{
-        marginTop: "4rem",
-        // margin: "0 auto",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        marginBottom: "2rem",
-      }}
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.9, once: true }}
     >
-      <div className="faqq">FAQ</div>
-      <div
+      <motion.div
+        custom={4}
+        variants={animationScroll}
         style={{
-          maxWidth: "1000px",
+          marginTop: "4rem",
+          // margin: "0 auto",
           display: "flex",
           flexDirection: "column",
-          margin: "0 auto",
+          alignItems: "center",
+          marginBottom: "2rem",
         }}
       >
-        <Accordion
-          expanded={expanded === "panel2"}
-          onChange={handleChange("panel2")}
+        <div className="faqq">FAQ</div>
+        <div
+          style={{
+            maxWidth: "1000px",
+            display: "flex",
+            flexDirection: "column",
+            margin: "0 auto",
+          }}
         >
-          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography>Каким путём отправляются деньги?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography style={{ fontSize: "0.7rem", fontWeight: "700" }}>
-              Деньги из РФ отправляются через банки Кыргызстана и Казахстана.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          expanded={expanded === "panel3"}
-          onChange={handleChange("panel3")}
-        >
-          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography>Как быстро доходят деньги из РФ в Европу?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography style={{ fontSize: "0.7rem", fontWeight: "700" }}>
-              Обычно переводы доходят мгновенно. Но мы всегда ставим официальный
-              срок в 1 час. За редкими случаями перевод может затянуться до 24-х
-              часов.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
+          <Accordion
+            expanded={expanded === "panel2"}
+            onChange={handleChange("panel2")}
+          >
+            <AccordionSummary
+              aria-controls="panel1d-content"
+              id="panel1d-header"
+            >
+              <Typography style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+                Каким путём отправляются деньги?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={{ fontSize: "0.9rem", fontWeight: "500" }}>
+                Деньги из РФ отправляются через банки Кыргызстана и Казахстана.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "panel3"}
+            onChange={handleChange("panel3")}
+          >
+            <AccordionSummary
+              aria-controls="panel3d-content"
+              id="panel3d-header"
+            >
+              <Typography style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+                Как быстро доходят деньги из РФ в Европу?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={{ fontSize: "0.9rem", fontWeight: "500" }}>
+                Обычно переводы доходят мгновенно. Но мы всегда ставим
+                официальный срок в 1 час. За редкими случаями перевод может
+                затянуться до 24-х часов.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
 
-        <Accordion
-          expanded={expanded === "panel4"}
-          onChange={handleChange("panel4")}
-        >
-          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography>
-              Сколько времени занимает перевод из Европы в Россию?
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography style={{ fontSize: "0.7rem", fontWeight: "700" }}>
-              Переводы из Европы также занимают 1 час времени.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          expanded={expanded === "panel5"}
-          onChange={handleChange("panel5")}
-        >
-          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography>Какие комиссии?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography style={{ fontSize: "0.7rem", fontWeight: "700" }}>
-              Комиссия включена в курс обмена, дополнительные комиссии с нашей
-              стороны вы не платите
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-      </div>
-    </div>
+          <Accordion
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+          >
+            <AccordionSummary
+              aria-controls="panel3d-content"
+              id="panel3d-header"
+            >
+              <Typography style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+                Сколько времени занимает перевод из Европы в Россию?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={{ fontSize: "0.9rem", fontWeight: "500" }}>
+                Переводы из Европы также занимают 1 час времени.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "panel5"}
+            onChange={handleChange("panel5")}
+          >
+            <AccordionSummary
+              aria-controls="panel3d-content"
+              id="panel3d-header"
+            >
+              <Typography style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+                Какие комиссии?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={{ fontSize: "0.9rem", fontWeight: "500" }}>
+                Комиссия включена в курс обмена, дополнительные комиссии с нашей
+                стороны вы не платите
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </motion.div>
+    </motion.div>
   );
 }

@@ -4,7 +4,7 @@ import "./Information.css";
 
 const animationScroll = {
   hidden: {
-    y: 200,
+    y: 10,
     opacity: 0,
   },
   visible: (custom: number) => ({
@@ -19,11 +19,11 @@ const Information = () => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.2, once: true }}
+      viewport={{ amount: 0.9, once: true }}
       id="onas"
     >
       <motion.div
-        custom={2}
+        custom={4}
         variants={animationScroll}
         className="miniInfoDiv"
         style={{ gap: "0.5rem", marginTop: "0rem" }}
@@ -39,7 +39,7 @@ const Information = () => {
             >
               <h3 className="hthre">КТО МЫ?</h3>
               <p className="pInfo">
-                <span style={{ fontWeight: "700" }}>cashqoen.com</span> - ваш
+                <span style={{ fontWeight: "700" }}>cashqoen.com</span> - Ваш
                 надежный партнер в мире международных финансовых операций. Нашей
                 миссией является обеспечение быстрой и удобной передачи средств
                 в Европу и США. Независимо от того, нужно ли вам отправить

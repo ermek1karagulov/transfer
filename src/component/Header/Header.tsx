@@ -8,13 +8,13 @@ import arrow from "./../img/arrow.svg";
 
 const textAnimation = {
   hidden: {
-    x: -100,
+    x: 800,
     opacity: 0,
   },
   visible: (custom: number) => ({
     x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { delay: custom * 0.3 },
   }),
 };
 
@@ -23,7 +23,7 @@ const Header = () => {
     <motion.div initial="hidden" whileInView="visible" className="mainDiv">
       <div className="miniMainDiv">
         <div className="trrrr">
-          <motion.h2 className="theme" custom={1} variants={textAnimation}>
+          <motion.h2 className="theme" custom={2} variants={textAnimation}>
             Мгновенные денежные переводы в Зарубеж:
           </motion.h2>
         </div>

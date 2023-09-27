@@ -224,9 +224,11 @@ export default function BottomLeftTextField() {
           </span>
         </div> */}
       </div>
-      <div className="bottomText" style={{ padding: "0rem 1rem 1rem 1rem" }}>
+      <div className="bottomText">
         <div className="btnDivv">
-          <ButtonStart />
+          <a href="#svyaz" style={{ textDecoration: "none" }}>
+            <ButtonStart />
+          </a>
         </div>
       </div>
     </div>

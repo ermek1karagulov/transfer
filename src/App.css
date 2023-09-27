@@ -11,7 +11,7 @@
   justify-content: space-between;
   background: #f7f7f8;
   text-align: center;
-  height: 50px;
+  height: 80px;
   width: 100%;
   font-size: 2rem;
 }
@@ -26,19 +26,27 @@
 .oNAs {
   font-size: 1.5rem;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .FAQtriDiv {
   font-size: 1.5rem;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .svyaztri {
   font-size: 1.5rem;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding-right: 2rem;
 }
 
 .cashQoin {
+  padding-left: 2rem;
   font-family: "Alfa Slab One", cursive;
   color: black;
   display: flex;

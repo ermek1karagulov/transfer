@@ -23,8 +23,21 @@
 .bottomText {
   display: flex;
   flex-direction: column;
-  text-align: start;
-  margin-left: 0.6rem;
+  margin-left: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .bottomText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btnDivv {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    animation: myAnim 1s ease 1s 1 normal forwards;
+  }
 }
 
 .ekonom {

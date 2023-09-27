@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 .mainDiv {
   margin-top: 0px;
-  background: white;
+  /* background: white; */
+  background-image: url("https://avatars.mds.yandex.net/i?id=08302abda9619cad06c996b32ae59cdc7e00bebb-9863357-images-thumbs&n=13");
+  background-repeat: no-repeat;
+  background-size: 355vh;
 }
 
 .miniMainDiv {
