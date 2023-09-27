@@ -12,7 +12,7 @@ import "./Accardion.css";
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-  border: `1px solid ${theme.palette.divider}`,
+  border: `0px solid ${theme.palette.divider}`,
   "&:not(:last-child)": {
     borderBottom: 0,
   },
@@ -27,10 +27,7 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
     {...props}
   />
 ))(({ theme }) => ({
-  backgroundColor:
-    theme.palette.mode === "dark"
-      ? "rgba(255, 255, 255, .05)"
-      : "rgba(0, 0, 0, .03)",
+  backgroundColor: (theme.palette.mode = "light"),
   flexDirection: "row-reverse",
   "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
     transform: "rotate(90deg)",
@@ -55,12 +52,18 @@ export default function AccordionMy() {
 
   return (
     <div
-      style={{ marginTop: "4rem", display: "flex", flexDirection: "column" }}
+      style={{
+        marginTop: "3rem",
+        margin: "0 auto",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
     >
       <div className="faqq">FAQ</div>
       <div
         style={{
-          maxWidth: "1200px",
+          maxWidth: "1000px",
           display: "flex",
           flexDirection: "column",
           margin: "0 auto",
@@ -74,7 +77,7 @@ export default function AccordionMy() {
             <Typography>Каким путём отправляются деньги?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography style={{ fontSize: "0.7rem", fontWeight: "700" }}>
               Деньги из РФ отправляются через банки Кыргызстана и Казахстана.
             </Typography>
           </AccordionDetails>
@@ -87,7 +90,7 @@ export default function AccordionMy() {
             <Typography>Как быстро доходят деньги из РФ в Европу?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography style={{ fontSize: "0.7rem", fontWeight: "700" }}>
               Обычно переводы доходят мгновенно. Но мы всегда ставим официальный
               срок в 1 час. За редкими случаями перевод может затянуться до 24-х
               часов.
@@ -105,7 +108,7 @@ export default function AccordionMy() {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography style={{ fontSize: "0.7rem", fontWeight: "700" }}>
               Переводы из Европы также занимают 1 час времени.
             </Typography>
           </AccordionDetails>
@@ -118,7 +121,7 @@ export default function AccordionMy() {
             <Typography>Какие комиссии?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography style={{ fontSize: "0.7rem", fontWeight: "700" }}>
               Комиссия включена в курс обмена, дополнительные комиссии с нашей
               стороны вы не платите
             </Typography>

@@ -51,8 +51,8 @@
 
 .textFielder {
   background-color: #fff;
-  border-radius: 15px;
-  border: 2px solid #1976d2;
+  /* border-radius: 15px;
+  border: 2px solid #1976d2; */
   /* width: 100%; */
   padding: 10px;
   margin-top: 3rem;
@@ -74,7 +74,7 @@
     align-items: center;
     width: 100%;
     gap: 1rem;
-    height: 700px;
+    height: 400px;
     margin: 0 auto;
   }
   .trrrr {

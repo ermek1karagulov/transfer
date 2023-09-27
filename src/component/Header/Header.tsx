@@ -28,11 +28,11 @@ const Header = () => {
               Мгновенные денежные переводы в Зарубеж:
             </motion.h2>
           </div>
-          <motion.div className="text" custom={2} variants={textAnimation}>
+          {/* <motion.div className="text" custom={2} variants={textAnimation}>
             Наш сервис предоставляет вам мгновенный доступ к переводам денег в
             Европу и США. Забудьте о сложных процедурах и высоких комиссиях.
             Отправьте деньги в любую точку мира легко и быстро!
-          </motion.div>
+          </motion.div> */}
         </div>
         <motion.div
           custom={3}

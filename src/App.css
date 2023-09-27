@@ -1,3 +1,118 @@
 .App {
-  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+.mainNaavbar {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f7f8;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.triDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.oNAs {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.FAQtriDiv {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.svyaztri {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cashQoin {
+  font-family: "Alfa Slab One", cursive;
+  color: black;
+  display: flex;
+  align-items: center;
+  animation: myNavbar 10s ease 0s infinite normal forwards;
+  cursor: pointer;
+}
+
+@keyframes myNavbar {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainNaavbar {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    background: #f7f7f8;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .triDiv {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+
+  .oNAs {
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .FAQtriDiv {
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .svyaztri {
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .cashQoin {
+    font-family: "Alfa Slab One", cursive;
+    color: black;
+    display: flex;
+    align-items: center;
+    animation: myNavbar 10s ease 0s infinite normal forwards;
+    cursor: pointer;
+  }
+
+  @keyframes myNavbar {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
 }

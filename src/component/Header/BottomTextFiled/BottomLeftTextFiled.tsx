@@ -82,9 +82,9 @@ export default function BottomLeftTextField() {
           <div>
             <TextField
               id="outlined-basic"
-              label="Отправляете"
+              label="Вы отправляете"
               variant="outlined"
-              style={{ width: "95%" }}
+              style={{ width: "100%" }}
               InputLabelProps={{
                 shrink: true,
               }}
@@ -115,6 +115,7 @@ export default function BottomLeftTextField() {
         >
           <div>
             <TextField
+              style={{ width: "100%" }}
               id="standard-select-currency"
               label="валюта"
               select
@@ -126,33 +127,8 @@ export default function BottomLeftTextField() {
           </div>
         </Box>
       </div>
-      <div className="centerText" style={{ padding: "1rem" }}>
-        {/* <div className="komission">
-          Комиссия за перевод:
-          <span
-            style={{ fontWeight: "700", color: "black", marginLeft: "5px" }}
-          >
-            5.00%
-          </span>
-        </div> */}
-        <div className="minimalSum">
-          Минимальная сумма перевода:
-          <span
-            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
-          >
-            16000
-          </span>
-        </div>
-        <div className="wait">
-          Ожидаемое время доставки:
-          <span
-            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
-          >
-            1 час
-          </span>
-        </div>
-      </div>
-      <div style={{ display: "flex", padding: "0rem 1rem 0rem 1rem" }}>
+
+      <div style={{ display: "flex", padding: "1rem 1rem 0rem 1rem" }}>
         <Box
           component="form"
           sx={{
@@ -163,9 +139,10 @@ export default function BottomLeftTextField() {
         >
           <div>
             <TextField
-              style={{ width: "95%" }}
+              style={{ width: "100%" }}
               id="outlined-basic"
-              label="Получатель получает"
+              label="Вы получаете"
+              defaultValue="Вы получаете"
               variant="outlined"
               InputLabelProps={{
                 shrink: true,
@@ -199,6 +176,7 @@ export default function BottomLeftTextField() {
         >
           <div>
             <TextField
+              style={{ width: "100%" }}
               id="outlined-select-currency-native"
               select
               label="валюта"
@@ -219,6 +197,32 @@ export default function BottomLeftTextField() {
             </TextField>
           </div>
         </Box>
+      </div>
+      <div className="centerText" style={{ padding: "1rem" }}>
+        {/* <div className="komission">
+          Комиссия за перевод:
+          <span
+            style={{ fontWeight: "700", color: "black", marginLeft: "5px" }}
+          >
+            5.00%
+          </span>
+        </div> */}
+        <div className="minimalSum">
+          Минимальная сумма перевода:
+          <span
+            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
+          >
+            16000
+          </span>
+        </div>
+        {/* <div className="wait">
+          Ожидаемое время доставки:
+          <span
+            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
+          >
+            1 час
+          </span>
+        </div> */}
       </div>
       <div className="bottomText" style={{ padding: "0rem 1rem 1rem 1rem" }}>
         <div className="btnDivv">

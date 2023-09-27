@@ -22,7 +22,7 @@
 }
 
 .hthre {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: black;
   font-family: "Open Sans", sans-serif;
@@ -78,7 +78,7 @@
   }
 
   .imageKolleges {
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
   }
 }
