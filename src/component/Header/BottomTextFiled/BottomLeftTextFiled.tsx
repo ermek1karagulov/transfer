@@ -170,7 +170,7 @@ export default function BottomLeftTextField() {
               InputLabelProps={{
                 shrink: true,
               }}
-              value={inputData.buy}
+              value={inputData.buy.toFixed(2)}
               // onChange={(e) => {
               //   //@ts-ignore
               //   if (!/\d+/.test(Number(e.target.value))) return;

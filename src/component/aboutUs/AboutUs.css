@@ -106,7 +106,7 @@
   }
 
   .miniTelegram {
-    background: #fafbff;
+    /* background: #fafbff; */
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -118,7 +118,7 @@
 
   .miniMail {
     cursor: pointer;
-    background: #fafbff;
+    /* background: #fafbff; */
     display: flex;
     flex-direction: column;
     align-items: center;
