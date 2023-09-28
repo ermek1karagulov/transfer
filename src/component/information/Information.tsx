@@ -15,8 +15,6 @@ const animationScroll = {
 };
 
 const Information = () => {
-  console.log(999);
-
   return (
     <motion.div
       initial="hidden"
