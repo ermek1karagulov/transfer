@@ -97,7 +97,7 @@ export default function AccordionMy() {
               aria-controls="panel1d-content"
               id="panel1d-header"
             >
-              <Typography style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+              <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
                 Каким путём отправляются деньги?
               </Typography>
             </AccordionSummary>
@@ -115,7 +115,7 @@ export default function AccordionMy() {
               aria-controls="panel3d-content"
               id="panel3d-header"
             >
-              <Typography style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+              <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
                 Как быстро доходят деньги из РФ в Европу?
               </Typography>
             </AccordionSummary>
@@ -136,7 +136,7 @@ export default function AccordionMy() {
               aria-controls="panel3d-content"
               id="panel3d-header"
             >
-              <Typography style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+              <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
                 Сколько времени занимает перевод из Европы в Россию?
               </Typography>
             </AccordionSummary>
@@ -154,7 +154,7 @@ export default function AccordionMy() {
               aria-controls="panel3d-content"
               id="panel3d-header"
             >
-              <Typography style={{ fontSize: "1.2rem", fontWeight: "600" }}>
+              <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
                 Какие комиссии?
               </Typography>
             </AccordionSummary>

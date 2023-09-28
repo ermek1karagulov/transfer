@@ -76,7 +76,7 @@ export default function BottomLeftTextField() {
 
   return (
     <div className="mainTextFieldDiv">
-      <div style={{ display: "flex", padding: "1rem 1rem 0rem 1rem" }}>
+      <div style={{ display: "flex", padding: "1rem 1rem 0rem 0rem" }}>
         <Box
           component="form"
           sx={{
@@ -128,11 +128,9 @@ export default function BottomLeftTextField() {
               variant="outlined"
               value={CurrencyType.RUB}
             >
-              <MenuItem
-                value={CurrencyType.RUB}
-                style={{ display: "flex", gap: "1rem" }}
-              >
+              <MenuItem value={CurrencyType.RUB}>
                 <img src={russia} />
+                <span>⠀</span>
                 {CurrencyType.RUB}
               </MenuItem>
             </TextField>
@@ -140,7 +138,7 @@ export default function BottomLeftTextField() {
         </Box>
       </div>
 
-      <div style={{ display: "flex", padding: "1rem 1rem 0rem 1rem" }}>
+      <div style={{ display: "flex", padding: "1rem 1rem 0rem 0rem" }}>
         <Box
           component="form"
           sx={{
@@ -206,17 +204,19 @@ export default function BottomLeftTextField() {
             >
               <MenuItem value={CurrencyType.USD}>
                 <img src={usa} />
+                <span>⠀</span>
                 {CurrencyType.USD}
               </MenuItem>
               <MenuItem value={CurrencyType.EUR}>
                 <img src={euro} />
+                <span>⠀</span>
                 {CurrencyType.EUR}
               </MenuItem>
             </TextField>
           </div>
         </Box>
       </div>
-      <div className="centerText" style={{ padding: "1rem 1rem 0rem 1rem" }}>
+      <div className="centerText" style={{ padding: "1rem 1rem 0rem 0rem" }}>
         {/* <div className="komission">
           Комиссия за перевод:
           <span
@@ -233,6 +233,13 @@ export default function BottomLeftTextField() {
             16000
           </span>
         </div>
+        <div className="bottomText">
+          <div className="btnDivv">
+            <a href="#svyaz" style={{ textDecoration: "none" }}>
+              <ButtonStart />
+            </a>
+          </div>
+        </div>
         {/* <div className="wait">
           Ожидаемое время доставки:
           <span
@@ -241,13 +248,6 @@ export default function BottomLeftTextField() {
             1 час
           </span>
         </div> */}
-      </div>
-      <div className="bottomText">
-        <div className="btnDivv">
-          <a href="#svyaz" style={{ textDecoration: "none" }}>
-            <ButtonStart />
-          </a>
-        </div>
       </div>
     </div>
   );

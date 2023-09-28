@@ -21,7 +21,7 @@
 }
 
 .text {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   /* width: 50%; */
   color: #444444;
 }
@@ -39,14 +39,10 @@
   text-align: start;
   text-wrap: wrap;
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   margin-top: 5rem;
 }
 
-.topTextFiled {
-  display: flex;
-  margin-top: 0rem;
-}
 .bottomTextFiled {
   display: flex;
   justify-content: center;
@@ -59,6 +55,7 @@
   /* width: 100%; */
   padding: 0px;
   margin-top: 3rem;
+  border-radius: 20px;
 }
 
 .trrrr {
@@ -88,7 +85,7 @@
   }
 
   .mainTwoTextFiled {
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .text {
@@ -111,11 +108,6 @@
     text-wrap: wrap;
     font-family: "Open Sans", sans-serif;
     /* padding-top: 7rem; */
-  }
-
-  .topTextFiled {
-    display: flex;
-    margin-top: 0rem;
   }
 
   .bottomTextFiled {

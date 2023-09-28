@@ -20,20 +20,26 @@ const textAnimation = {
 
 const Header = () => {
   return (
-    <motion.div initial="hidden" whileInView="visible" className="mainDiv">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      className="mainDiv"
+      viewport={{ amount: 0.2, once: true }}
+    >
       <div className="miniMainDiv">
         <div className="trrrr">
-          <motion.h2 className="theme" custom={5} variants={textAnimation}>
+          <motion.h2 className="theme" custom={4} variants={textAnimation}>
             Мгновенные денежные переводы в Зарубеж!
           </motion.h2>
-        </div>
-        {/* <motion.div className="text" custom={2} variants={textAnimation}>
-            Наш сервис предоставляет вам мгновенный доступ к переводам денег в
-            Европу и США. Забудьте о сложных процедурах и высоких комиссиях.
+          <motion.div className="text" custom={5} variants={textAnimation}>
+            {/* Наш сервис предоставляет вам мгновенный доступ к переводам денег в
+            Европу и США. Забудьте о сложных процедурах и высоких комиссиях. */}
             Отправьте деньги в любую точку мира легко и быстро!
-          </motion.div> */}
+          </motion.div>
+        </div>
+
         <motion.div
-          custom={4}
+          custom={6}
           variants={textAnimation}
           className="textFieldHeader"
         >
