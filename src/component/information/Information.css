@@ -8,7 +8,7 @@
 .pInfo {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .bgInfo {
@@ -25,7 +25,7 @@
 .hthre {
   font-size: 1.5rem;
   font-weight: 700;
-  color: black;
+  color: #012970;
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;

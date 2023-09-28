@@ -75,33 +75,33 @@
     /* justify-content: space-between; */
     background: #f7f7f8;
     text-align: center;
-    height: 90px;
+    height: 120px;
     width: 100%;
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
   }
 
   .triDiv {
     display: flex;
     justify-content: space-evenly;
     font-weight: 600;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0rem 0.5rem 1.5rem;
   }
 
   .oNAs {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
     color: #012970;
   }
 
   .FAQtriDiv {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
     color: #012970;
   }
 
   .svyaztri {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
     color: #012970;
   }

@@ -57,7 +57,7 @@
   /* border-radius: 15px;
   border: 2px solid #1976d2; */
   /* width: 100%; */
-  padding: 10px;
+  padding: 0px;
   margin-top: 3rem;
 }
 
@@ -84,6 +84,7 @@
   }
   .trrrr {
     width: 100%;
+    margin-top: 2rem;
   }
 
   .mainTwoTextFiled {

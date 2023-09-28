@@ -23,8 +23,8 @@ const Header = () => {
     <motion.div initial="hidden" whileInView="visible" className="mainDiv">
       <div className="miniMainDiv">
         <div className="trrrr">
-          <motion.h2 className="theme" custom={2} variants={textAnimation}>
-            Мгновенные денежные переводы в Зарубеж:
+          <motion.h2 className="theme" custom={5} variants={textAnimation}>
+            Мгновенные денежные переводы в Зарубеж!
           </motion.h2>
         </div>
         {/* <motion.div className="text" custom={2} variants={textAnimation}>
@@ -33,7 +33,7 @@ const Header = () => {
             Отправьте деньги в любую точку мира легко и быстро!
           </motion.div> */}
         <motion.div
-          custom={3}
+          custom={4}
           variants={textAnimation}
           className="textFieldHeader"
         >

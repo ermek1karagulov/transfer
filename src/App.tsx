@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="mainNaavbar">
-        <div className="cashQoin">CashQoen</div>
+        <div className="cashQoin">CashGoen</div>
         <div className="triDiv">
           <div className="oNAs">
             <a

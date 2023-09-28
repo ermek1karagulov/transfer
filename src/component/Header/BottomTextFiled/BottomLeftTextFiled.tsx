@@ -7,6 +7,12 @@ import axios from "axios";
 import { API } from "../../../api";
 import "./BottomLeftTextField.css";
 import ButtonStart from "./ButtonStart";
+// @ts-ignore
+import russia from "./../../img/russia.svg";
+// @ts-ignore
+import usa from "./../../img/usa.svg";
+// @ts-ignore
+import euro from "./../../img/euro.svg";
 
 enum TransactionType {
   SELL = "SELL",
@@ -122,7 +128,13 @@ export default function BottomLeftTextField() {
               variant="outlined"
               value={CurrencyType.RUB}
             >
-              <MenuItem value={CurrencyType.RUB}>{CurrencyType.RUB}</MenuItem>
+              <MenuItem
+                value={CurrencyType.RUB}
+                style={{ display: "flex", gap: "1rem" }}
+              >
+                <img src={russia} />
+                {CurrencyType.RUB}
+              </MenuItem>
             </TextField>
           </div>
         </Box>
@@ -192,13 +204,19 @@ export default function BottomLeftTextField() {
                 }));
               }}
             >
-              <MenuItem value={CurrencyType.USD}>{CurrencyType.USD}</MenuItem>
-              <MenuItem value={CurrencyType.EUR}>{CurrencyType.EUR}</MenuItem>
+              <MenuItem value={CurrencyType.USD}>
+                <img src={usa} />
+                {CurrencyType.USD}
+              </MenuItem>
+              <MenuItem value={CurrencyType.EUR}>
+                <img src={euro} />
+                {CurrencyType.EUR}
+              </MenuItem>
             </TextField>
           </div>
         </Box>
       </div>
-      <div className="centerText" style={{ padding: "1rem" }}>
+      <div className="centerText" style={{ padding: "1rem 1rem 0rem 1rem" }}>
         {/* <div className="komission">
           Комиссия за перевод:
           <span

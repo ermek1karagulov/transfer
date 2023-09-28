@@ -64,7 +64,7 @@ export default function TextFieldMessages() {
       </div>
       <div>
         <TextField
-          label="Ваше сообщения"
+          label="Ваше сообщение"
           style={{ width: "96%" }}
           className="textFieldTwo"
           id="outlined-multiline-static"
@@ -72,7 +72,7 @@ export default function TextFieldMessages() {
           multiline
           value={state.description}
           onChange={(e) => setState({ ...state, description: e.target.value })}
-          rows={4}
+          rows={6}
         />
       </div>
       <div
