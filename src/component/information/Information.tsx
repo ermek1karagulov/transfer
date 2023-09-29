@@ -22,36 +22,28 @@ const Information = () => {
       viewport={{ amount: 0.2, once: true }}
       id="onas"
     >
-      <motion.div
-        custom={5}
-        variants={animationScroll}
-        className="miniInfoDiv"
-        style={{ gap: "0.5rem", marginTop: "0rem" }}
-      >
-        <div>
-          <div className="bgInfo" style={{ marginTop: "1rem" }}>
-            <div
-              className="divvvvvv"
-              style={{
-                width: "90%",
-                padding: "20px",
-              }}
-            >
-              <div className="diveee">
-                <h3 className="hthre" style={{ color: "#012970" }}>
-                  КТО МЫ?
-                </h3>
-                <p className="pInfo">
-                  <span style={{ fontWeight: "600" }}>Cashgoen.com</span> - Ваш
-                  надежный партнер в мире международных финансовых операций.
-                  Нашей миссией является обеспечение быстрой и удобной передачи
-                  средств в Европу и США. Независимо от того, нужно ли вам
-                  отправить средства семье за границей, оплатить образование или
-                  инвестировать в международные проекты - мы делаем это просто и
-                  надежно.
-                </p>
-              </div>
-            </div>
+      <motion.div custom={5} variants={animationScroll} className="miniInfoDiv">
+        <div className="bgInfo" style={{ marginTop: "1rem" }}>
+          <div
+            className="divvvvvv"
+            style={{
+              // width: "90%",
+              padding: "20px",
+            }}
+          >
+            {/* <div className="diveee"> */}
+            <h3 className="hthre" style={{ color: "rgb(23 44 212)" }}>
+              КТО МЫ?
+            </h3>
+            <p className="pInfo">
+              <span style={{ fontWeight: "600" }}>Cashgoen.com</span> - Ваш
+              надежный партнер в мире международных финансовых операций. Нашей
+              миссией является обеспечение быстрой и удобной передачи средств в
+              Европу и США. Независимо от того, нужно ли вам отправить средства
+              семье за границей, оплатить образование или инвестировать в
+              международные проекты - мы делаем это просто и надежно.
+            </p>
+            {/* </div> */}
           </div>
         </div>
         <div>

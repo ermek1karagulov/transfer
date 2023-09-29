@@ -30,11 +30,16 @@ const AboutUs = () => {
     >
       <div className="miniConnection">
         <motion.div className="themeSvyaz">
-          <motion.div custom={4} variants={textAnimation}>
+          {/* <motion.div custom={4} variants={textAnimation}>
             <h4 className="hfourConnection">СВЯЗАТЬСЯ</h4>
-          </motion.div>
+          </motion.div> */}
           <motion.div custom={5} variants={textAnimation}>
-            <div className="divSvyazConnection">Свяжитесь с нами</div>
+            <div
+              className="divSvyazConnection"
+              style={{ color: "rgb(23 44 212)" }}
+            >
+              Свяжитесь с нами
+            </div>
           </motion.div>
         </motion.div>
         <div className="threeDivs">

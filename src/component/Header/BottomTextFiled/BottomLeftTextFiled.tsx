@@ -25,20 +25,7 @@ enum CurrencyType {
   EUR = "EUR",
 }
 
-const currencies = [
-  {
-    value: "USD",
-    label: "$",
-  },
-  {
-    value: "EUR",
-    label: "€",
-  },
-  {
-    value: "РУБ",
-    label: "₽",
-  },
-];
+const DEFAULT_SELL_COUNT = 16000;
 
 export default function BottomLeftTextField() {
   const [rate, setRate] = useState({
@@ -48,7 +35,7 @@ export default function BottomLeftTextField() {
   });
 
   const [selectedBuyCurrency, setSelectedBuyCarrency] = useState(
-    CurrencyType.USD
+    CurrencyType.EUR
   );
 
   const [inputData, setInputData] = useState({
@@ -66,6 +53,15 @@ export default function BottomLeftTextField() {
         USD: +optima_bank.rates[0].sell_usd,
         EUR: +optima_bank.rates[0].sell_eur,
       });
+
+      const som = DEFAULT_SELL_COUNT * +optima_bank.rates[0].buy_rub;
+      const converted = som ? Number(som) / +optima_bank.rates[0].sell_eur : 0;
+      setInputData((v) => ({
+        ...v,
+        sell: DEFAULT_SELL_COUNT,
+        buy: converted - (converted / 100) * 5,
+      }));
+
       // setInputData({
       //   sell: +optima_bank.rates[0].buy_rub,
       //   buy: +optima_bank.rates[0].sell_usd,

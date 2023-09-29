@@ -5,6 +5,7 @@
   background-image: url("https://avatars.mds.yandex.net/i?id=08302abda9619cad06c996b32ae59cdc7e00bebb-9863357-images-thumbs&n=13");
   background-repeat: no-repeat;
   background-size: 355vh;
+  height: 100vh;
 }
 
 .miniMainDiv {
@@ -35,7 +36,7 @@
 
 .theme {
   font-size: 48px;
-  color: #012970;
+  color: #8394b0;
   text-align: start;
   text-wrap: wrap;
   font-family: "Open Sans", sans-serif;
@@ -45,7 +46,8 @@
 
 .bottomTextFiled {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin-top: 4.5rem;
 }
 
 .textFielder {
@@ -60,14 +62,66 @@
 }
 
 @media (max-width: 1000px) {
+  .mainDiv {
+    margin-top: 0px;
+    /* background: white; */
+    background-image: url("https://avatars.mds.yandex.net/i?id=08302abda9619cad06c996b32ae59cdc7e00bebb-9863357-images-thumbs&n=13");
+    background-repeat: no-repeat;
+    background-size: 355vh;
+    height: 100vh;
+  }
+
+  .miniMainDiv {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    height: 500px;
+  }
+
+  .text {
+    font-size: 1.8rem;
+    /* width: 50%; */
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .theme {
+    font-size: 37px;
+    color: #8394b0;
+    text-align: start;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5rem;
+  }
+
+  .bottomTextFiled {
+    display: flex;
+    align-items: center;
+    margin-top: 0rem;
+  }
+
   .textFieldHeader {
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trrrr {
+    width: 50%;
   }
 }
 
 @media (max-width: 600px) {
   .mainDiv {
     margin-top: 0px;
+    background-image: url("https://avatars.mds.yandex.net/i?id=08302abda9619cad06c996b32ae59cdc7e00bebb-9863357-images-thumbs&n=13");
+    background-repeat: no-repeat;
+    background-size: 150vh;
   }
 
   .miniMainDiv {
@@ -76,14 +130,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 1rem;
-    height: 500px;
+    gap: 0rem;
     margin: 0 auto;
     margin-bottom: 3rem;
   }
   .trrrr {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 11rem;
   }
 
   .mainTwoTextFiled {
@@ -95,6 +148,7 @@
     width: 100%;
     color: #444444;
     text-align: center;
+    font-weight: 400;
   }
 
   .pharagraf {
@@ -113,7 +167,7 @@
 
   .bottomTextFiled {
     display: flex;
-    width: 90%;
-    padding: 1rem;
+    width: 100%;
+    padding: 0rem;
   }
 }

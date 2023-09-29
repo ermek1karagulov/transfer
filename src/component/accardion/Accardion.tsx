@@ -24,7 +24,7 @@ const Accordion = styled((props: AccordionProps) => (
 
 const AccordionSummary = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary
-    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />}
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.8rem" }} />}
     {...props}
   />
 ))(({ theme }) => ({
@@ -80,7 +80,9 @@ export default function AccordionMy() {
           marginBottom: "2rem",
         }}
       >
-        <div className="faqq">FAQ</div>
+        <div className="faqq" style={{ color: "rgb(23 44 212)" }}>
+          FAQ
+        </div>
         <div
           style={{
             maxWidth: "1000px",
@@ -97,12 +99,12 @@ export default function AccordionMy() {
               aria-controls="panel1d-content"
               id="panel1d-header"
             >
-              <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+              <Typography style={{ fontSize: "1rem", fontWeight: "500" }}>
                 Каким путём отправляются деньги?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{ fontSize: "0.9rem", fontWeight: "500" }}>
+              <Typography style={{ fontSize: "0.8rem", fontWeight: "400" }}>
                 Деньги из РФ отправляются через банки Кыргызстана и Казахстана.
               </Typography>
             </AccordionDetails>
@@ -115,12 +117,12 @@ export default function AccordionMy() {
               aria-controls="panel3d-content"
               id="panel3d-header"
             >
-              <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+              <Typography style={{ fontSize: "1rem", fontWeight: "500" }}>
                 Как быстро доходят деньги из РФ в Европу?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{ fontSize: "0.9rem", fontWeight: "500" }}>
+              <Typography style={{ fontSize: "0.8rem", fontWeight: "400" }}>
                 Обычно переводы доходят мгновенно. Но мы всегда ставим
                 официальный срок в 1 час. За редкими случаями перевод может
                 затянуться до 24-х часов.
@@ -136,12 +138,12 @@ export default function AccordionMy() {
               aria-controls="panel3d-content"
               id="panel3d-header"
             >
-              <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+              <Typography style={{ fontSize: "1rem", fontWeight: "500" }}>
                 Сколько времени занимает перевод из Европы в Россию?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{ fontSize: "0.9rem", fontWeight: "500" }}>
+              <Typography style={{ fontSize: "0.8rem", fontWeight: "400" }}>
                 Переводы из Европы также занимают 1 час времени.
               </Typography>
             </AccordionDetails>
@@ -154,12 +156,12 @@ export default function AccordionMy() {
               aria-controls="panel3d-content"
               id="panel3d-header"
             >
-              <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+              <Typography style={{ fontSize: "1rem", fontWeight: "500" }}>
                 Какие комиссии?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography style={{ fontSize: "0.9rem", fontWeight: "500" }}>
+              <Typography style={{ fontSize: "0.8rem", fontWeight: "400" }}>
                 Комиссия включена в курс обмена, дополнительные комиссии с нашей
                 стороны вы не платите
               </Typography>
