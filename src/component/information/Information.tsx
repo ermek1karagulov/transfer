@@ -57,7 +57,7 @@ const Information = () => {
         <div>
           <img
             className="imageKolleges"
-            src="https://gazeta.spb.ru/wp-content/uploads/2019/03/ofis-1024x646.jpg"
+            src="https://obrazovanie.by/wp-content/uploads/2014/04/collective-1920x1280.jpg"
             alt="коллеги"
           />
         </div>

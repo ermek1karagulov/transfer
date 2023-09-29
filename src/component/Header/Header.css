@@ -21,9 +21,11 @@
 }
 
 .text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   /* width: 50%; */
   color: #444444;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .pharagraf {
@@ -60,6 +62,12 @@
 
 .trrrr {
   width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .textFieldHeader {
+    margin-top: 5rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -111,5 +119,7 @@
 
   .bottomTextFiled {
     display: flex;
+    width: 90%;
+    padding: 1rem;
   }
 }

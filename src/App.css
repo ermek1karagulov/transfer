@@ -89,19 +89,20 @@
   }
 
   .oNAs {
-    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     color: #012970;
   }
 
   .FAQtriDiv {
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
     color: #012970;
   }
 
   .svyaztri {
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
     color: #012970;
   }

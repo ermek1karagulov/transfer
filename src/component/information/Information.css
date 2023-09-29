@@ -68,7 +68,7 @@
   }
 
   .pInfo {
-    font-size: 0.7.5rem;
+    font-size: 0.6rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
   }
@@ -92,7 +92,7 @@
   }
 
   .imageKolleges {
-    width: 280px;
+    width: 100%;
     height: 280px;
   }
 }
