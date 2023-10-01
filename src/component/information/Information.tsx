@@ -27,11 +27,9 @@ const Information = () => {
           <div
             className="divvvvvv"
             style={{
-              // width: "90%",
               padding: "20px",
             }}
           >
-            {/* <div className="diveee"> */}
             <h3 className="hthre" style={{ color: "rgb(23 44 212)" }}>
               КТО МЫ?
             </h3>
@@ -43,7 +41,6 @@ const Information = () => {
               семье за границей, оплатить образование или инвестировать в
               международные проекты - мы делаем это просто и надежно.
             </p>
-            {/* </div> */}
           </div>
         </div>
         <div>
