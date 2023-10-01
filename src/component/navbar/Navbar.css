@@ -17,3 +17,10 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .cshww {
+    display: flex;
+    justify-content: center;
+  }
+}

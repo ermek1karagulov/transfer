@@ -77,7 +77,7 @@ export default function Navbar(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ ml: -3, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -86,6 +86,7 @@ export default function Navbar(props: Props) {
             variant="h5"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "block", sm: "block" } }}
+            className="cshww"
           >
             <span className="ceshGoen">CashGoen</span>
           </Typography>
