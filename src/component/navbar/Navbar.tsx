@@ -82,14 +82,14 @@ export default function Navbar(props: Props) {
             <MenuIcon />
           </IconButton>
 
-          <Typography
-            variant="h5"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "block", sm: "block" } }}
+          <div
+            // variant="h5"
+            // component="div"
+            style={{ flexGrow: 1 }}
             className="cshwww"
           >
             <span className="ceshGoen">CashGoen</span>
-          </Typography>
+          </div>
           <Box
             sx={{ display: { xs: "none", sm: "block", marginRight: "2rem" } }}
           >

@@ -2,6 +2,7 @@
 
 .ceshGoen {
   font-family: "Croissant One", cursive;
+  font-size: 25px;
   animation: myAnim 5s ease 0s infinite normal forwards;
 }
 
