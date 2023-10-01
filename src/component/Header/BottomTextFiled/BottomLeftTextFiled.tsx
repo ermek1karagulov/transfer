@@ -224,7 +224,13 @@ export default function BottomLeftTextField() {
         <div className="minimalSum">
           *Минимальная сумма перевода:
           <span
-            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
+            style={{
+              fontWeight: "600",
+              color: "black",
+              marginLeft: "5px",
+              marginRight: "3px",
+              flexWrap: "wrap",
+            }}
           >
             16000
           </span>
