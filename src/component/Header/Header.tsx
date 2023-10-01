@@ -30,7 +30,7 @@ const Header = () => {
         <div className="trrrr">
           <motion.h2
             className="theme"
-            style={{ color: "rgb(23 44 212)" }}
+            style={{ color: "#012970" }}
             custom={4}
             variants={textAnimation}
           >
@@ -38,7 +38,7 @@ const Header = () => {
           </motion.h2>
           <motion.div
             className="text"
-            style={{ color: "#012970" }}
+            style={{ color: "#444444" }}
             custom={5}
             variants={textAnimation}
           >

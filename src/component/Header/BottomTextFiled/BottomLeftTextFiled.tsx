@@ -46,7 +46,7 @@ export default function BottomLeftTextField() {
   useEffect(() => {
     API.get("").then((v) => {
       const optima_bank = v.data.find((bank: any) => bank.slug === "optima");
-      console.log(optima_bank);
+      // console.log(optima_bank);
 
       setRate({
         RUB: +optima_bank.rates[0].buy_rub,
@@ -68,7 +68,7 @@ export default function BottomLeftTextField() {
       // });
     });
   }, []);
-  console.log(rate);
+  // console.log(rate);
 
   return (
     <div className="mainTextFieldDiv">

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+
+.ceshGoen {
+  font-family: "Croissant One", cursive;
+  animation: myAnim 5s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}

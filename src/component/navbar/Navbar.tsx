@@ -13,6 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import "./Navbar.css";
 
 interface Props {
   /**
@@ -40,7 +41,7 @@ export default function Navbar(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <span style={{ fontWeight: "700" }}>CashGoen</span>
+        <span className="ceshGoen">CashGoen</span>
       </Typography>
       <Divider />
       <List>
@@ -71,6 +72,7 @@ export default function Navbar(props: Props) {
       <AppBar component="nav" style={{ textDecoration: "none" }}>
         <Toolbar>
           <IconButton
+            className="btnIcon"
             color="inherit"
             aria-label="open drawer"
             edge="start"
@@ -79,14 +81,17 @@ export default function Navbar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
+
           <Typography
-            variant="h6"
+            variant="h5"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ flexGrow: 1, display: { xs: "block", sm: "block" } }}
           >
-            CashGoen
+            <span className="ceshGoen">CashGoen</span>
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box
+            sx={{ display: { xs: "none", sm: "block", marginRight: "2rem" } }}
+          >
             {navItems.map((item) => (
               <Button key={item.label} sx={{ color: "#fff" }}>
                 {item.label}
@@ -97,6 +102,7 @@ export default function Navbar(props: Props) {
       </AppBar>
       <nav style={{ textDecoration: "none" }}>
         <Drawer
+          style={{ marginRight: "7rem" }}
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -111,6 +117,7 @@ export default function Navbar(props: Props) {
               width: drawerWidth,
             },
           }}
+          // style={{ display: "flex", justifyContent: "space-between" }}
         >
           {drawer}
         </Drawer>
