@@ -86,7 +86,7 @@ export default function Navbar(props: Props) {
             variant="h5"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "block", sm: "block" } }}
-            className="cshww"
+            className="cshwww"
           >
             <span className="ceshGoen">CashGoen</span>
           </Typography>
