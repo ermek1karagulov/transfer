@@ -222,16 +222,20 @@ export default function BottomLeftTextField() {
           </span>
         </div> */}
         <div className="minimalSum">
-          Минимальная сумма перевода:
+          *Минимальная сумма перевода:
           <span
             style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
           >
             16000
           </span>
+          RUB
         </div>
         <div className="bottomText">
           <div className="btnDivv">
-            <a href="#svyaz" style={{ textDecoration: "none" }}>
+            <a
+              href="#svyaz"
+              style={{ textDecoration: "none", paddingTop: "10px" }}
+            >
               <ButtonStart />
             </a>
           </div>

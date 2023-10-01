@@ -146,6 +146,9 @@
     color: #444444;
     text-align: center;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
   }
 
   .pharagraf {
@@ -156,11 +159,13 @@
   .theme {
     /* padding: 5px; */
     width: 100%;
-    font-size: 27px;
+    font-size: 25px;
     color: #012970;
     text-align: center;
     text-wrap: wrap;
     font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
   }
 
   .bottomTextFiled {

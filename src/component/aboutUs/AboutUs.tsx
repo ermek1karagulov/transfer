@@ -36,7 +36,7 @@ const AboutUs = () => {
           <motion.div custom={4} variants={textAnimation}>
             <div
               className="divSvyazConnection"
-              style={{ color: "rgb(23 44 212)" }}
+              style={{ color: "rgb(1, 41, 112)" }}
             >
               Свяжитесь с нами
             </div>

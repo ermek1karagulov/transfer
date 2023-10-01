@@ -8,7 +8,7 @@ export default function ButtonStart() {
     <Stack spacing={2} direction="row">
       <Button
         variant="contained"
-        style={{ background: "rgb(25, 118, 210)" }}
+        style={{ background: "#4154f1" }}
         className="btnNaaaaa"
       >
         Начать

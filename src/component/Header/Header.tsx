@@ -38,7 +38,7 @@ const Header = () => {
           </motion.h2>
           <motion.div
             className="text"
-            style={{ color: "#444444" }}
+            style={{ color: "rgb(62 18 192)" }}
             custom={5}
             variants={textAnimation}
           >

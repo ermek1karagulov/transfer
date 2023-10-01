@@ -80,7 +80,7 @@ export default function AccordionMy() {
           marginBottom: "2rem",
         }}
       >
-        <div className="faqq" style={{ color: "rgb(23 44 212)" }}>
+        <div className="faqq" style={{ color: "rgb(1, 41, 112)" }}>
           FAQ
         </div>
         <div
