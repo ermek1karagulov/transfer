@@ -23,5 +23,6 @@
   .cshwww {
     display: flex;
     justify-content: center;
+    margin-right: 1rem;
   }
 }
