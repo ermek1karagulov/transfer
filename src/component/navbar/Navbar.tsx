@@ -77,7 +77,7 @@ export default function Navbar(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ ml: -3, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
