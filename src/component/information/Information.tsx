@@ -43,7 +43,7 @@ const Information = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div style={{ marginLeft: "5px" }}>
           <img
             className="imageKolleges"
             src="https://obrazovanie.by/wp-content/uploads/2014/04/collective-1920x1280.jpg"
