@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const AboutUs = () => {
   const textAnimation = {
     hidden: {
-      x: 800,
+      x: 10,
       opacity: 0,
     },
     visible: (custom: number) => ({
@@ -33,7 +33,7 @@ const AboutUs = () => {
           {/* <motion.div custom={4} variants={textAnimation}>
             <h4 className="hfourConnection">СВЯЗАТЬСЯ</h4>
           </motion.div> */}
-          <motion.div custom={5} variants={textAnimation}>
+          <motion.div custom={4} variants={textAnimation}>
             <div
               className="divSvyazConnection"
               style={{ color: "rgb(23 44 212)" }}
@@ -50,7 +50,7 @@ const AboutUs = () => {
           >
             <motion.div
               className="mainTelegram"
-              custom={6}
+              custom={5}
               variants={textAnimation}
             >
               <div className="miniTelegram">
@@ -69,7 +69,7 @@ const AboutUs = () => {
             style={{ textDecoration: "none" }}
           >
             <motion.div
-              custom={7}
+              custom={6}
               variants={textAnimation}
               className="miniMail"
             >
@@ -81,7 +81,7 @@ const AboutUs = () => {
             </motion.div>
           </a>
 
-          <motion.div custom={8} variants={textAnimation} className="btnTo">
+          <motion.div custom={7} variants={textAnimation} className="btnTo">
             <TextFieldMessages />
           </motion.div>
         </div>
