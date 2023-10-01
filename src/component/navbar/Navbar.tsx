@@ -24,7 +24,7 @@ interface Props {
 
 const drawerWidth = 240;
 const navItems = [
-  { label: "О нас", link: "#onac" },
+  { label: "О нас", link: "#onas" },
   { label: "FAQ", link: "#Fag" },
   { label: "Contact", link: "#svyaz" },
 ];
@@ -45,7 +45,7 @@ export default function Navbar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <a href={item.link}>
+          <a style={{ textDecoration: "none" }} href={item.link}>
             <ListItem key={item.label} disablePadding>
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary={item.label} />
@@ -68,7 +68,7 @@ export default function Navbar(props: Props) {
       }}
     >
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" style={{ textDecoration: "none" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -95,7 +95,7 @@ export default function Navbar(props: Props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <nav>
+      <nav style={{ textDecoration: "none" }}>
         <Drawer
           container={container}
           variant="temporary"
