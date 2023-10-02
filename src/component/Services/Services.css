@@ -126,7 +126,7 @@ h4 {
   font-size: 0.8rem;
 }
 
-@media (max-width: "600px") {
+@media (max-width: 600px) {
   h4 {
     font-weight: 600;
   }
@@ -147,6 +147,7 @@ h4 {
     font-weight: 700;
     color: rgb(1, 41, 112);
     text-align: center;
+    width: 85%;
   }
 
   .themeService {
@@ -165,8 +166,8 @@ h4 {
 
   .miniMainDivCard {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 8px;
   }
   /* 
 .miniMainDivCard :hover {
@@ -177,11 +178,12 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 22rem;
 
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    height: 94.5%;
-    padding: 60px 30px 70px;
+    height: 100%;
+
+    padding: 60px 30px;
     text-align: center;
     border-radius: 5px;
     margin: 1rem;
@@ -192,10 +194,10 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 22rem;
 
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    height: 93.5%;
+    height: 100%;
     padding: 60px 30px;
     text-align: center;
     border-radius: 5px;
@@ -207,15 +209,145 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 22rem;
 
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    height: 93.5%;
+    height: 100%;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 5px;
+    /* margin: 1rem; */
+    margin-top: 3rem;
+
+    border-bottom: 3px solid #08da4e;
+  }
+
+  .bgCurrency {
+    width: 90px;
+    height: 90px;
+    background-color: #dbf3fe;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bgCurrencyTwo {
+    width: 90px;
+    height: 90px;
+    background-color: #fde3c4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bgCurrencyThree {
+    width: 90px;
+    height: 90px;
+    background-color: #cffddf;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pfaragraf {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  h4 {
+    font-weight: 600;
+  }
+
+  .miniMainService {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .descriptionService {
+    font-family: "Open Sans", sans-serif;
+    margin: 10px 0 3rem 0;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 42px;
+    font-weight: 700;
+    color: rgb(1, 41, 112);
+    text-align: center;
+    width: 85%;
+  }
+
+  .themeService {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: rgb(23, 44, 212);
+  }
+
+  .mainDivCard {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .miniMainDivCard {
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+  }
+  /* 
+.miniMainDivCard :hover {
+  background-color: #4154f1;
+} */
+
+  .cardsServiceone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    height: 100%;
 
     padding: 60px 30px;
     text-align: center;
     border-radius: 5px;
     margin: 1rem;
+    border-bottom: 3px solid #2db6fa;
+  }
+
+  .cardsServicetwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    height: 100%;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1rem;
+
+    border-bottom: 3px solid #f68c09;
+  }
+  .cardsServicethree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    height: 100%;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 5px;
+    /* margin: 1rem; */
+    margin-top: 3rem;
 
     border-bottom: 3px solid #08da4e;
   }

@@ -12,11 +12,11 @@ const Services = () => {
     <div className="mainService">
       <div className="miniMainService">
         <div className="themeService">УСЛУГИ</div>
-        <div>
-          <h2 className="descriptionService">
-            Инструменты для ваших финансовых потребностей
-          </h2>
-        </div>
+        {/* <div> */}
+        <h2 className="descriptionService">
+          Инструменты для ваших финансовых потребностей
+        </h2>
+        {/* </div> */}
         {/* <div className="mainDivCard"> */}
         <div className="miniMainDivCard">
           <div className="cardsServiceone">
@@ -29,10 +29,10 @@ const Services = () => {
             </div>
             <h4>Переводы</h4>
             <p className="pfaragraf">
-              Мы предоставляем возможность международных переводов денег между
-              СНГ и Европой и делаем это мгновенно, с самым лучшим курсом
-              обмена, без похода в физические отделения после регистрации на
-              сайте которая занимает 1-3 минуты.
+              Сashgoen.com предоставляет возможность международных переводов
+              денег между СНГ и Европой и делаем это мгновенно, без похода в
+              физические отделения после регистрации на сайте которая занимает
+              1-3 минуты.
             </p>
           </div>
           <div>
