@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
+h4 {
+  font-weight: 600;
+}
+
 .miniMainService {
   display: flex;
   flex-direction: column;
@@ -63,7 +67,7 @@
   width: 20rem;
 
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  height: 94.5%;
+  height: 93.5%;
   padding: 60px 30px;
   text-align: center;
   border-radius: 5px;
@@ -76,7 +80,7 @@
   width: 20rem;
 
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  height: 94.5%;
+  height: 93.5%;
 
   padding: 60px 30px;
   text-align: center;
@@ -114,4 +118,5 @@
 .pfaragraf {
   text-align: center;
   font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
 }
