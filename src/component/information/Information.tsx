@@ -46,7 +46,7 @@ const Information = () => {
         <div style={{ marginLeft: "5px" }}>
           <img
             className="imageKolleges"
-            src="https://obrazovanie.by/wp-content/uploads/2014/04/collective-1920x1280.jpg"
+            src="https://cdn.dribbble.com/users/1726973/screenshots/6539903/men-shaking-hands_4x.jpg?compress=1&resize=400x300"
             alt="коллеги"
           />
         </div>
