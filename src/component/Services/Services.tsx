@@ -6,20 +6,52 @@ import currency from "./../img/currency.svg";
 import card from "./../img/card.svg";
 // @ts-ignore
 import dollar from "./../img/dollar.svg";
+import { motion } from "framer-motion";
+
+const animationScroll = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
 
 const Services = () => {
   return (
-    <div className="mainService">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      className="mainService"
+    >
       <div className="miniMainService">
-        <div className="themeService">УСЛУГИ</div>
+        <motion.div
+          className="themeService"
+          custom={2}
+          variants={animationScroll}
+        >
+          УСЛУГИ
+        </motion.div>
         {/* <div> */}
-        <h2 className="descriptionService">
+        <motion.h2
+          custom={3}
+          variants={animationScroll}
+          className="descriptionService"
+        >
           Инструменты для ваших финансовых потребностей
-        </h2>
+        </motion.h2>
         {/* </div> */}
         {/* <div className="mainDivCard"> */}
         <div className="miniMainDivCard">
-          <div className="cardsServiceone">
+          <motion.div
+            custom={4}
+            variants={animationScroll}
+            className="cardsServiceone"
+          >
             <div className="bgCurrency">
               <img
                 style={{ display: "flex", alignItems: "center" }}
@@ -34,9 +66,13 @@ const Services = () => {
               физические отделения после регистрации на сайте которая занимает
               1-3 минуты.
             </p>
-          </div>
+          </motion.div>
           <div>
-            <div className="cardsServicetwo">
+            <motion.div
+              custom={5}
+              variants={animationScroll}
+              className="cardsServicetwo"
+            >
               <div className="bgCurrencyTwo">
                 <img
                   style={{
@@ -55,10 +91,14 @@ const Services = () => {
                 кабинетом на нашем сервисе и удобным пополнением по самому
                 выгодному курсу!
               </p>
-            </div>
+            </motion.div>
           </div>
           <div>
-            <div className="cardsServicethree">
+            <motion.div
+              custom={6}
+              variants={animationScroll}
+              className="cardsServicethree"
+            >
               <div className="bgCurrencyThree">
                 <img
                   style={{ display: "flex", alignItems: "center" }}
@@ -73,11 +113,11 @@ const Services = () => {
                 дальнейшим выводом на Ваш IBAN-счёт в Европе либо банковский
                 счёт в США.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
     // </div>
   );
 };
