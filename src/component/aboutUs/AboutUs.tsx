@@ -30,9 +30,6 @@ const AboutUs = () => {
     >
       <div className="miniConnection">
         <motion.div className="themeSvyaz">
-          {/* <motion.div custom={4} variants={textAnimation}>
-            <h4 className="hfourConnection">СВЯЗАТЬСЯ</h4>
-          </motion.div> */}
           <motion.div custom={4} variants={textAnimation}>
             <div
               className="divSvyazConnection"
@@ -74,7 +71,7 @@ const AboutUs = () => {
               className="miniMail"
             >
               <div>
-                <img src={mail} alt="" />
+                <img src={mail} />
               </div>
               <div>Напишите нам на почту</div>
               <div>cashgoen@gmail.com</div>
