@@ -73,7 +73,6 @@ export default function AccordionMy() {
         variants={animationScroll}
         style={{
           marginTop: "4rem",
-          // margin: "0 auto",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
