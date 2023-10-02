@@ -58,6 +58,7 @@ h4 {
   text-align: center;
   border-radius: 5px;
   margin: 1rem;
+  border-bottom: 3px solid #2db6fa;
 }
 
 .cardsServicetwo {
@@ -72,6 +73,8 @@ h4 {
   text-align: center;
   border-radius: 5px;
   margin: 1rem;
+
+  border-bottom: 3px solid #f68c09;
 }
 .cardsServicethree {
   display: flex;
@@ -86,6 +89,8 @@ h4 {
   text-align: center;
   border-radius: 5px;
   margin: 1rem;
+
+  border-bottom: 3px solid #08da4e;
 }
 
 .bgCurrency {
