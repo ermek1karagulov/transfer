@@ -47,6 +47,7 @@ const Information = () => {
           <img
             className="imageKolleges"
             src="https://cdn.dribbble.com/users/1726973/screenshots/6539903/men-shaking-hands_4x.jpg?compress=1&resize=400x300"
+            // src="https://fotomelia.com/wp-content/uploads/edd/2016/01/banque-d-images-et-photos-gratuites-libres-de-droits-t%C3%A9l%C3%A9chargement-gratuits-197-1560x1560.jpg"
             alt="коллеги"
           />
         </div>

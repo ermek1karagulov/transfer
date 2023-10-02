@@ -5,6 +5,7 @@ import AboutUs from "./component/aboutUs/AboutUs";
 import "./App.css";
 import AccordionMy from "./component/accardion/Accardion";
 import Navbar from "./component/navbar/Navbar";
+import Services from "./component/Services/Services";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <Header />
       <div id="onas">
         <Information />
+      </div>
+      <div>
+        <Services />
       </div>
       <div id="Fag">
         <AccordionMy />
