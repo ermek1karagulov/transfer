@@ -30,7 +30,7 @@ const AboutUs = () => {
     >
       <div className="miniConnection">
         <motion.div className="themeSvyaz">
-          <motion.div custom={4} variants={textAnimation}>
+          <motion.div custom={2} variants={textAnimation}>
             <div
               className="divSvyazConnection"
               style={{ color: "rgb(1, 41, 112)" }}
@@ -47,7 +47,7 @@ const AboutUs = () => {
           >
             <motion.div
               className="mainTelegram"
-              custom={5}
+              custom={3}
               variants={textAnimation}
             >
               <div className="miniTelegram">
@@ -66,7 +66,7 @@ const AboutUs = () => {
             style={{ textDecoration: "none" }}
           >
             <motion.div
-              custom={6}
+              custom={4}
               variants={textAnimation}
               className="miniMail"
             >
@@ -78,7 +78,7 @@ const AboutUs = () => {
             </motion.div>
           </a>
 
-          <motion.div custom={7} variants={textAnimation} className="btnTo">
+          <motion.div custom={5} variants={textAnimation} className="btnTo">
             <TextFieldMessages />
           </motion.div>
         </div>
