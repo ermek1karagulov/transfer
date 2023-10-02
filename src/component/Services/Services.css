@@ -93,6 +93,24 @@
   justify-content: center;
 }
 
+.bgCurrencyTwo {
+  width: 90px;
+  height: 90px;
+  background-color: #fde3c4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.bgCurrencyThree {
+  width: 90px;
+  height: 90px;
+  background-color: #cffddf;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
 .pfaragraf {
   text-align: center;
   font-family: "Open Sans", sans-serif;

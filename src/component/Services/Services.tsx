@@ -37,9 +37,13 @@ const Services = () => {
           </div>
           <div>
             <div className="cardsServicetwo">
-              <div className="bgCurrency">
+              <div className="bgCurrencyTwo">
                 <img
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    // background: "#fde3c4",
+                  }}
                   src={card}
                   alt=""
                 />
@@ -55,7 +59,7 @@ const Services = () => {
           </div>
           <div>
             <div className="cardsServicethree">
-              <div className="bgCurrency">
+              <div className="bgCurrencyThree">
                 <img
                   style={{ display: "flex", alignItems: "center" }}
                   src={dollar}
