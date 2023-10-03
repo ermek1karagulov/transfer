@@ -94,9 +94,11 @@ export default function Navbar(props: Props) {
             sx={{ display: { xs: "none", sm: "block", marginRight: "2rem" } }}
           >
             {navItems.map((item) => (
-              <Button key={item.label} sx={{ color: "#fff" }}>
-                {item.label}
-              </Button>
+              <a style={{ textDecoration: "none" }} href={item.link}>
+                <Button key={item.label} sx={{ color: "#fff" }}>
+                  {item.label}
+                </Button>
+              </a>
             ))}
           </Box>
         </Toolbar>

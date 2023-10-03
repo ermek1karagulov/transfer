@@ -117,7 +117,7 @@ export default function BottomLeftTextField() {
         >
           <div>
             <TextField
-              style={{ width: "100%" }}
+              style={{ width: "90%" }}
               id="standard-select-currency"
               label="валюта"
               select
@@ -182,7 +182,7 @@ export default function BottomLeftTextField() {
         >
           <div>
             <TextField
-              style={{ width: "100%" }}
+              style={{ width: "90%" }}
               id="outlined-select-currency-native"
               select
               label="валюта"
@@ -212,6 +212,15 @@ export default function BottomLeftTextField() {
           </div>
         </Box>
       </div>
+      <div style={{ marginTop: "1rem", marginLeft: "0.5rem" }}>
+        <TextField
+          style={{ width: "95%" }}
+          id="outlined-multiline-flexible"
+          label="Telegram"
+          multiline
+          maxRows={4}
+        />
+      </div>
       <div className="centerText" style={{ padding: "1rem 1rem 0rem 0rem" }}>
         {/* <div className="komission">
           Комиссия за перевод:
@@ -238,22 +247,18 @@ export default function BottomLeftTextField() {
         </div>
         <div className="bottomText">
           <div className="btnDivv">
-            <a
-              href="#svyaz"
-              style={{ textDecoration: "none", paddingTop: "10px" }}
+            <div
+              // href="#svyaz"
+              style={{
+                textDecoration: "none",
+                // paddingTop: "10px",
+                width: "100%",
+              }}
             >
               <ButtonStart />
-            </a>
+            </div>
           </div>
         </div>
-        {/* <div className="wait">
-          Ожидаемое время доставки:
-          <span
-            style={{ fontWeight: "600", color: "black", marginLeft: "5px" }}
-          >
-            1 час
-          </span>
-        </div> */}
       </div>
     </div>
   );

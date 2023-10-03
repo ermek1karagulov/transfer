@@ -5,6 +5,9 @@ import "./TextFieldMessages.css";
 import react, { useState } from "react";
 import axios from "axios";
 
+const Telegram_API =
+  "https://api.telegram.org/bot6380903562:AAEvqODGC2EEFhuN92EZrnQvJ2I51A7t6Cg/sendMessage";
+
 export default function TextFieldMessages() {
   const [state, setState] = useState({
     name: "",
@@ -13,12 +16,18 @@ export default function TextFieldMessages() {
     description: "",
   });
 
-  function addMessages() {
+  async function AddMessage() {
     try {
-      // const res = axios.post(`${API}`);
-      console.log(" ghbdtn", 1111);
+      const res = await axios.post(Telegram_API, {
+        //@ts-ignore
+        chat_id: 886751147,
+        parse_mode: "html",
+        // message: <div>siuuuu</div>,
+        text: "erlaaan",
+      });
+      console.log(res);
     } catch (error) {
-      console.log(error);
+      console.log("Sending error", error);
     }
   }
 
@@ -81,7 +90,7 @@ export default function TextFieldMessages() {
           justifyContent: "center",
         }}
       >
-        <button className="btnBottom" onClick={() => addMessages()}>
+        <button className="btnBottom" onClick={() => AddMessage()}>
           Отправить сообщение
         </button>
       </div>

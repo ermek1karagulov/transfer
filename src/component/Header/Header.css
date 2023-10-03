@@ -171,6 +171,6 @@
   .bottomTextFiled {
     display: flex;
     width: 100%;
-    padding: 0rem;
+    padding-left: 0.6rem;
   }
 }
