@@ -26,7 +26,15 @@ function App() {
       <div id="svyaz">
         <AboutUs />
       </div>
-      <div className="toastify"></div>
+      <div className="toastify">
+        <ToastContainer
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        />
+      </div>
     </div>
   );
 }
