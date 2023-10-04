@@ -6,13 +6,16 @@ import react, { useState, useEffect } from "react";
 import axios from "axios";
 import { API } from "../../../api";
 import "./BottomLeftTextField.css";
-import ButtonStart from "./ButtonStart";
 // @ts-ignore
 import russia from "./../../img/russia.svg";
 // @ts-ignore
 import usa from "./../../img/usa.svg";
 // @ts-ignore
 import euro from "./../../img/euro.svg";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import "./ButtonStart.css";
+import { toast } from "react-toastify";
 
 enum TransactionType {
   SELL = "SELL",
@@ -28,6 +31,9 @@ enum CurrencyType {
 const DEFAULT_SELL_COUNT = 16000;
 
 export default function BottomLeftTextField() {
+  const Telegram_API =
+    "https://api.telegram.org/bot6380903562:AAEvqODGC2EEFhuN92EZrnQvJ2I51A7t6Cg/sendMessage";
+
   const [rate, setRate] = useState({
     RUB: 0,
     USD: 0,
@@ -70,6 +76,37 @@ export default function BottomLeftTextField() {
   }, []);
   // console.log(rate);
 
+  const [telegramState, telegramSetState] = useState("");
+  const [error, setError] = useState("");
+
+  async function AddMessage() {
+    setError("");
+    if (inputData.sell === 0 || inputData.buy === 0 || !telegramState) {
+      return setError("Введите значение!!!");
+    }
+    try {
+      const res = await axios.post(Telegram_API, {
+        //@ts-ignore
+        chat_id: 886751147,
+        parse_mode: "html",
+        // message: <div>siuuuu</div>,
+        text: {
+          sell: `${inputData.sell}${CurrencyType.RUB}`,
+          buy: `${inputData.buy}${selectedBuyCurrency}`,
+          telegram: `${telegramState}`,
+        },
+      });
+      setInputData({
+        buy: 0,
+        sell: 0,
+      });
+      telegramSetState("");
+      toast.success("Менеджер скоро свяжется с вами");
+      console.log(res);
+    } catch (error) {
+      console.log("Sending error", error);
+    }
+  }
   return (
     <div className="mainTextFieldDiv">
       <div style={{ display: "flex", padding: "1rem 1rem 0rem 0rem" }}>
@@ -219,6 +256,8 @@ export default function BottomLeftTextField() {
           label="Telegram"
           multiline
           maxRows={4}
+          value={telegramState}
+          onChange={(e) => telegramSetState(e.target.value)}
         />
       </div>
       <div className="centerText" style={{ padding: "1rem 1rem 0rem 0rem" }}>
@@ -255,7 +294,27 @@ export default function BottomLeftTextField() {
                 width: "100%",
               }}
             >
-              <ButtonStart />
+              <div
+                style={{
+                  // background: "yellow",
+                  color: "red",
+                  display: "flex",
+                  justifyContent: "center",
+                  marginBottom: "1rem",
+                }}
+              >
+                {error}
+              </div>
+              <Stack spacing={2} direction="row">
+                <Button
+                  onClick={() => AddMessage()}
+                  variant="contained"
+                  style={{ background: "#4154f1" }}
+                  className="btnNaaaaa"
+                >
+                  Начать
+                </Button>
+              </Stack>
             </div>
           </div>
         </div>
