@@ -120,7 +120,6 @@ export default function Navbar(props: Props) {
               width: drawerWidth,
             },
           }}
-          // style={{ display: "flex", justifyContent: "space-between" }}
         >
           {drawer}
         </Drawer>
