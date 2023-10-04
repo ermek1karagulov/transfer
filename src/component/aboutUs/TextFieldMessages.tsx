@@ -77,7 +77,6 @@ export default function TextFieldMessages() {
           style={{ width: "96%" }}
           className="textFieldTwo"
           id="outlined-multiline-static"
-          // label="Multiline"
           multiline
           value={state.description}
           onChange={(e) => setState({ ...state, description: e.target.value })}
