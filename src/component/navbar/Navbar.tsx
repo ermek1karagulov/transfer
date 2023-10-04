@@ -121,7 +121,9 @@ export default function Navbar(props: Props) {
             },
           }}
           // style={{ display: "flex", justifyContent: "space-between" }}
-        ></Drawer>
+        >
+          {drawer}
+        </Drawer>
       </nav>
     </Box>
   );
