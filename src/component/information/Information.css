@@ -7,6 +7,14 @@
   justify-content: center;
 }
 
+@media (max-width: 1400px) {
+  .miniInfoDiv {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 10rem; */
+  }
+}
+
 .pInfo {
   font-size: 1rem;
   font-family: "Nunito Sans", sans-serif;

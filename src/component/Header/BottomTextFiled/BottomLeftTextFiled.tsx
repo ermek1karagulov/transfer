@@ -252,8 +252,9 @@ export default function BottomLeftTextField() {
       <div style={{ marginTop: "1rem", marginLeft: "0.5rem" }}>
         <TextField
           style={{ width: "95%" }}
-          id="outlined-multiline-flexible"
+          id="outlined-textarea"
           label="Telegram"
+          placeholder="@sergey"
           multiline
           maxRows={4}
           value={telegramState}

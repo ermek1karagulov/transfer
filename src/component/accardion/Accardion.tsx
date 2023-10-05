@@ -69,7 +69,7 @@ export default function AccordionMy() {
       viewport={{ amount: 0.9, once: true }}
     >
       <motion.div
-        custom={4}
+        custom={3}
         variants={animationScroll}
         style={{
           marginTop: "4rem",

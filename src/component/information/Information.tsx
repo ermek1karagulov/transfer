@@ -22,7 +22,7 @@ const Information = () => {
       viewport={{ amount: 0.2, once: true }}
       id="onas"
     >
-      <motion.div custom={4} variants={animationScroll} className="miniInfoDiv">
+      <motion.div custom={3} variants={animationScroll} className="miniInfoDiv">
         <div className="bgInfo" style={{ marginTop: "1rem" }}>
           <div
             className="divvvvvv"

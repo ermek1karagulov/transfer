@@ -31,7 +31,7 @@ const Header = () => {
           <motion.h2
             className="theme"
             style={{ color: "#012970" }}
-            custom={4}
+            custom={2}
             variants={textAnimation}
           >
             Мгновенные денежные переводы в Зарубеж!
@@ -39,7 +39,7 @@ const Header = () => {
           <motion.div
             className="text"
             style={{ color: "#444444" }}
-            custom={5}
+            custom={3}
             variants={textAnimation}
           >
             {/* Наш сервис предоставляет вам мгновенный доступ к переводам денег в
@@ -49,7 +49,7 @@ const Header = () => {
         </div>
 
         <motion.div
-          custom={6}
+          custom={4}
           variants={textAnimation}
           className="textFieldHeader"
         >

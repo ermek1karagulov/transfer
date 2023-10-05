@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+.mainAboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.whatAboutUs {
+  text-wrap: wrap;
+  margin: 10px 0 10px 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+  font-family: "Open Sans", sans-serif;
+}
+
+.otzyvy {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #4154f1;
+}
+
+.seeOur {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #07080f;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .mainAboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whatAboutUs {
+    text-wrap: wrap;
+    margin: 5px 0 5px 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #012970;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .otzyvy {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #4154f1;
+  }
+
+  .seeOur {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #0f1124;
+  }
+}

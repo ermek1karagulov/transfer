@@ -8,6 +8,7 @@ import Navbar from "./component/navbar/Navbar";
 import Services from "./component/Services/Services";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import WhatAboutUs from "./component/whatAboutUs/WhatAboutUs";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       </div>
       <div id="Fag">
         <AccordionMy />
+      </div>
+      <div id="otzyvy">
+        <WhatAboutUs />
       </div>
       <div id="svyaz">
         <AboutUs />
