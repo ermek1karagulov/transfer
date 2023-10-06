@@ -59,15 +59,15 @@
 
 @media (max-width: 382px) {
   .formTop {
-    padding-left: 1.2rem;
+    padding-left: 1.5rem;
   }
 
   .formBottom {
     padding-top: 1rem;
-    padding-left: 1.2rem;
+    padding-left: 1.5rem;
   }
 
   .txtTelegg {
-    width: 95%;
+    width: 90%;
   }
 }
