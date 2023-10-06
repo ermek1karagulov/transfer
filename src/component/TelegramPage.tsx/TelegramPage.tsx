@@ -162,7 +162,7 @@ const TelegramPage = () => {
                   id="outlined-basic"
                   label="Вы отправляете"
                   variant="outlined"
-                  style={{ width: "100%", marginRight: "60px" }}
+                  style={{ width: "100%", marginRight: "40px" }}
                   InputLabelProps={{
                     shrink: true,
                   }}
@@ -248,7 +248,7 @@ const TelegramPage = () => {
             >
               <div>
                 <TextField
-                  style={{ width: "100%", marginRight: "60px" }}
+                  style={{ width: "100%", marginRight: "40px" }}
                   id="outlined-basic"
                   label="Вы получаете"
                   defaultValue="Вы получаете"
@@ -318,7 +318,7 @@ const TelegramPage = () => {
           <div style={{ display: "flex", justifyContent: "center" }}>
             <TextField
               className="txtTelegg"
-              style={{ width: "96%" }}
+              style={{ width: "95%" }}
               id="outlined-textarea"
               label="Ваш Telegram"
               placeholder="@sergey"

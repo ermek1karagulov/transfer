@@ -10,12 +10,12 @@
 }
 
 .formTop {
-  padding-left: 0.7rem;
+  padding-left: 1rem;
 }
 
 .formBottom {
   padding-top: 1rem;
-  padding-left: 0.7rem;
+  padding-left: 1rem;
 }
 
 .centerTextt {
@@ -59,12 +59,12 @@
 
 @media (max-width: 382px) {
   .formTop {
-    padding-left: 0.7rem;
+    padding-left: 0.9rem;
   }
 
   .formBottom {
     padding-top: 1rem;
-    padding-left: 0.7rem;
+    padding-left: 0.9rem;
   }
 
   .txtTelegg {
