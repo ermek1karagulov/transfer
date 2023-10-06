@@ -56,6 +56,13 @@
   border-radius: 20px;
 }
 
+.textFieldHeader {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .trrrr {
   width: 50%;
 }

@@ -16,6 +16,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import "./ButtonStart.css";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 enum TransactionType {
   SELL = "SELL",
@@ -249,7 +250,7 @@ export default function BottomLeftTextField() {
           </div>
         </Box>
       </div>
-      <div style={{ marginTop: "1rem", marginLeft: "0.5rem" }}>
+      {/* <div style={{ marginTop: "1rem", marginLeft: "0.5rem" }}>
         <TextField
           style={{ width: "95%" }}
           id="outlined-textarea"
@@ -260,7 +261,7 @@ export default function BottomLeftTextField() {
           value={telegramState}
           onChange={(e) => telegramSetState(e.target.value)}
         />
-      </div>
+      </div> */}
       <div className="centerText" style={{ padding: "1rem 1rem 0rem 0rem" }}>
         {/* <div className="komission">
           Комиссия за перевод:
@@ -295,7 +296,7 @@ export default function BottomLeftTextField() {
                 width: "100%",
               }}
             >
-              <div
+              {/* <div
                 style={{
                   // background: "yellow",
                   color: "red",
@@ -305,17 +306,19 @@ export default function BottomLeftTextField() {
                 }}
               >
                 {error}
-              </div>
-              <Stack spacing={2} direction="row">
-                <Button
-                  onClick={() => AddMessage()}
-                  variant="contained"
-                  style={{ background: "#4154f1" }}
-                  className="btnNaaaaa"
-                >
-                  Начать
-                </Button>
-              </Stack>
+              </div> */}
+              <Link to="/toTelegram" style={{ textDecoration: "none" }}>
+                <Stack spacing={2} direction="row">
+                  <Button
+                    // onClick={() => AddMessage()}
+                    variant="contained"
+                    style={{ background: "#4154f1" }}
+                    className="btnNaaaaa"
+                  >
+                    Начать
+                  </Button>
+                </Stack>
+              </Link>
             </div>
           </div>
         </div>

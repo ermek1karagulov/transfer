@@ -9,27 +9,17 @@ import Services from "./component/Services/Services";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import WhatAboutUs from "./component/whatAboutUs/WhatAboutUs";
+import { Route, Routes } from "react-router-dom";
+import TelegramPage from "./component/TelegramPage.tsx/TelegramPage";
+import Mainroutes from "./component/TelegramPage.tsx/Mainroutes";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <div id="onas">
-        <Information />
-      </div>
-      <div>
-        <Services />
-      </div>
-      <div id="Fag">
-        <AccordionMy />
-      </div>
-      <div id="otzyvy">
-        <WhatAboutUs />
-      </div>
-      <div id="svyaz">
-        <AboutUs />
-      </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Mainroutes />} />
+        <Route path="/toTelegram" element={<TelegramPage />} />
+      </Routes>
       <div className="toastify">
         <ToastContainer
           style={{
@@ -39,7 +29,7 @@ function App() {
           }}
         />
       </div>
-    </div>
+    </>
   );
 }
 
