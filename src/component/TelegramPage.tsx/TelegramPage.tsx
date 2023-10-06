@@ -145,7 +145,7 @@ const TelegramPage = () => {
           <div
             style={{
               display: "flex",
-              padding: "1rem 1rem 0rem 0rem",
+              //   padding: "0rem 0rem 0rem 0rem",
               justifyContent: "center",
             }}
           >
@@ -193,7 +193,6 @@ const TelegramPage = () => {
             >
               <div>
                 <TextField
-                  style={{ width: "100%" }}
                   id="standard-select-currency"
                   label="валюта"
                   select
@@ -209,7 +208,7 @@ const TelegramPage = () => {
               </div>
             </Box>
           </div>
-          <div style={{ padding: "0rem 0rem 0rem 1rem" }}>
+          <div style={{ padding: "0rem 0rem 0rem 1.5rem" }}>
             <FormControl>
               {/* <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel> */}
               <RadioGroup
@@ -235,7 +234,7 @@ const TelegramPage = () => {
           <div
             style={{
               display: "flex",
-              padding: "1rem 1rem 0rem 0rem",
+              padding: "1rem 0rem 0rem 0rem",
               justifyContent: "center",
             }}
           >
@@ -286,7 +285,6 @@ const TelegramPage = () => {
             >
               <div>
                 <TextField
-                  style={{ width: "100%" }}
                   id="outlined-select-currency-native"
                   select
                   label="валюта"
@@ -316,27 +314,24 @@ const TelegramPage = () => {
               </div>
             </Box>
           </div>
-
-          <div
-            style={{
-              marginTop: "1rem",
-              marginLeft: "0.7rem",
-              justifyContent: "center",
+          <Box
+            sx={{
+              m: 1,
             }}
           >
             <TextField
-              style={{ width: "97.5%" }}
-              id="outlined-textarea"
+              style={{ width: "100%" }}
+              //   className="txtField"
+              //   id="outlined-textarea"
               label="Ваш Telegram"
               placeholder="@sergey"
-              multiline
-              maxRows={4}
+              //   multiline
+              //   maxRows={4}
               value={telegramState}
               onChange={(e) => telegramSetState(e.target.value)}
             />
-          </div>
-
-          <div style={{ padding: "1rem 0rem 0rem 1rem" }}>
+          </Box>
+          <div style={{ padding: "1rem 0rem 0rem 1.5rem" }}>
             <FormControl>
               <RadioGroup
                 aria-labelledby="demo-controlled-radio-buttons-group"

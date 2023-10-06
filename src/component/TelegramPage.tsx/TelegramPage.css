@@ -47,3 +47,22 @@
   font-family: "Open Sans", sans-serif;
   margin-top: 1rem;
 }
+/* .tgDiv {
+  margin-left: 1.4rem;
+  margin-top: 1rem;
+} */
+
+/* @media (max-width: 382px) {
+  .tgDiv {
+    margin-left: 0.4rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .txtField {
+    width: 90%;
+    margin: 0px;
+    padding: 0px;
+  }
+} */
