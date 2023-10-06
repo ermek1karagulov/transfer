@@ -152,7 +152,7 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "20ch" },
+                "& .MuiTextField-root": { m: 1 },
               }}
               noValidate
               autoComplete="off"
@@ -186,7 +186,7 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "10ch" },
+                "& .MuiTextField-root": { m: 1 },
               }}
               noValidate
               autoComplete="off"
@@ -242,7 +242,7 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "20ch" },
+                "& .MuiTextField-root": { m: 1 },
               }}
               noValidate
               autoComplete="off"
@@ -279,7 +279,7 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "10ch" },
+                "& .MuiTextField-root": { m: 1 },
               }}
               noValidate
               autoComplete="off"
@@ -327,7 +327,7 @@ const TelegramPage = () => {
             <TextField
               style={{ width: "97.5%" }}
               id="outlined-textarea"
-              label="Telegram"
+              label="Ваш Telegram"
               placeholder="@sergey"
               multiline
               maxRows={4}
@@ -401,7 +401,7 @@ const TelegramPage = () => {
                   style={{ background: "#4154f1" }}
                   className="btnNaaaaa"
                 >
-                  Начать
+                  Отправить
                 </Button>
               </Stack>
             </div>
