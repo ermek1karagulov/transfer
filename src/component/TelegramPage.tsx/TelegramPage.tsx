@@ -162,7 +162,7 @@ const TelegramPage = () => {
                   id="outlined-basic"
                   label="Вы отправляете"
                   variant="outlined"
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", marginRight: "60px" }}
                   InputLabelProps={{
                     shrink: true,
                   }}
@@ -208,7 +208,7 @@ const TelegramPage = () => {
               </div>
             </Box>
           </div>
-          <div style={{ padding: "0rem 0rem 0rem 1.5rem" }}>
+          <div className="formTop">
             <FormControl>
               {/* <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel> */}
               <RadioGroup
@@ -248,7 +248,7 @@ const TelegramPage = () => {
             >
               <div>
                 <TextField
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", marginRight: "60px" }}
                   id="outlined-basic"
                   label="Вы получаете"
                   defaultValue="Вы получаете"
@@ -314,24 +314,21 @@ const TelegramPage = () => {
               </div>
             </Box>
           </div>
-          <Box
-            sx={{
-              m: 1,
-            }}
-          >
+
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <TextField
-              style={{ width: "100%" }}
-              //   className="txtField"
-              //   id="outlined-textarea"
+              className="txtTelegg"
+              style={{ width: "96%" }}
+              id="outlined-textarea"
               label="Ваш Telegram"
               placeholder="@sergey"
-              //   multiline
-              //   maxRows={4}
+              multiline
+              maxRows={4}
               value={telegramState}
               onChange={(e) => telegramSetState(e.target.value)}
             />
-          </Box>
-          <div style={{ padding: "1rem 0rem 0rem 1.5rem" }}>
+          </div>
+          <div className="formBottom">
             <FormControl>
               <RadioGroup
                 aria-labelledby="demo-controlled-radio-buttons-group"

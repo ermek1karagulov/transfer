@@ -9,6 +9,15 @@
   margin-top: 4rem;
 }
 
+.formTop {
+  padding-left: 0.7rem;
+}
+
+.formBottom {
+  padding-top: 1rem;
+  padding-left: 0.7rem;
+}
+
 .centerTextt {
   display: flex;
   flex-direction: column;
@@ -47,22 +56,18 @@
   font-family: "Open Sans", sans-serif;
   margin-top: 1rem;
 }
-/* .tgDiv {
-  margin-left: 1.4rem;
-  margin-top: 1rem;
-} */
 
-/* @media (max-width: 382px) {
-  .tgDiv {
-    margin-left: 0.4rem;
-    margin-top: 1rem;
-    margin-right: 0.5rem;
-    display: flex;
-    justify-content: center;
+@media (max-width: 382px) {
+  .formTop {
+    padding-left: 0.7rem;
   }
-  .txtField {
-    width: 90%;
-    margin: 0px;
-    padding: 0px;
+
+  .formBottom {
+    padding-top: 1rem;
+    padding-left: 0.7rem;
   }
-} */
+
+  .txtTelegg {
+    width: 100%;
+  }
+}
