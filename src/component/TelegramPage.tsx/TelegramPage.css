@@ -48,6 +48,13 @@
   margin-bottom: 0.5rem;
 }
 
+.divtelega {
+  display: flex;
+  justify-content: center;
+  width: 93.5%;
+  margin-left: 0.8rem;
+}
+
 .wait {
   color: gray;
   font-size: 1rem;
@@ -69,5 +76,12 @@
 
   .txtTelegg {
     width: 90%;
+  }
+
+  .divtelega {
+    display: flex;
+    justify-content: center;
+    width: 95.5%;
+    margin-left: 0.5rem;
   }
 }
