@@ -205,29 +205,7 @@ const TelegramPage = () => {
               </TextField>
             </Box>
           </div>
-          <div className="formTop">
-            <FormControl>
-              {/* <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel> */}
-              <RadioGroup
-                aria-labelledby="demo-controlled-radio-buttons-group"
-                name="controlled-radio-buttons-group"
-                value={value}
-                onChange={handleChange}
-              >
-                <FormControlLabel
-                  value="Сбербанк"
-                  control={<Radio />}
-                  label="Сбербанкhh"
-                />
-                <FormControlLabel
-                  style={{ fontSize: "5px" }}
-                  value="🏦Остальные банки"
-                  control={<Radio />}
-                  label="🏦Остальные банки"
-                />
-              </RadioGroup>
-            </FormControl>
-          </div>
+
           <div
             style={{
               display: "flex",
@@ -320,6 +298,29 @@ const TelegramPage = () => {
               value={telegramState}
               onChange={(e) => telegramSetState(e.target.value)}
             />
+          </div>
+          <div className="formTop">
+            <FormControl>
+              {/* <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel> */}
+              <RadioGroup
+                aria-labelledby="demo-controlled-radio-buttons-group"
+                name="controlled-radio-buttons-group"
+                value={value}
+                onChange={handleChange}
+              >
+                <FormControlLabel
+                  value="Сбербанк"
+                  control={<Radio />}
+                  label="Сбербанкhh"
+                />
+                <FormControlLabel
+                  style={{ fontSize: "5px" }}
+                  value="🏦Остальные банки"
+                  control={<Radio />}
+                  label="🏦Остальные банки"
+                />
+              </RadioGroup>
+            </FormControl>
           </div>
           <div className="formBottom">
             <FormControl>
