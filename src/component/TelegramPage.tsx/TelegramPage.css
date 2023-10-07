@@ -10,12 +10,12 @@
 }
 
 .formTop {
-  padding-left: 1rem;
+  margin-left: 1rem;
 }
 
 .formBottom {
   padding-top: 1rem;
-  padding-left: 1rem;
+  margin-left: 1rem;
 }
 
 .centerTextt {
@@ -66,12 +66,12 @@
 
 @media (max-width: 382px) {
   .formTop {
-    padding-left: 1.5rem;
+    margin-left: 1.5rem;
   }
 
   .formBottom {
     padding-top: 1rem;
-    padding-left: 1.5rem;
+    margin-left: 1.5rem;
   }
 
   .divtelega {
@@ -84,18 +84,18 @@
 
 @media (max-width: 300px) {
   .formTop {
-    padding-left: 2rem;
+    margin-left: 2rem;
   }
 
   .formBottom {
     padding-top: 1rem;
-    padding-left: 2rem;
+    margin-left: 2rem;
   }
 
   .divtelega {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin-left: 0.5rem;
   }
 }
