@@ -313,7 +313,7 @@ const TelegramPage = () => {
               style={{ width: "100%" }}
               className="telegrammm"
               id="outlined-textarea"
-              label="Ваш Telegrammm"
+              label="Ваш Telegram"
               placeholder="@sergey"
               multiline
               maxRows={4}
@@ -345,7 +345,7 @@ const TelegramPage = () => {
             style={{ padding: "0rem 1rem 0rem 0rem" }}
           >
             <div className="minimalSumm">
-              *Минимальная сумма переводаh:
+              *Минимальная сумма перевода:
               <span
                 style={{
                   fontWeight: "600",
