@@ -313,7 +313,7 @@ const TelegramPage = () => {
               style={{ width: "100%" }}
               className="telegrammm"
               id="outlined-textarea"
-              label="Ваш Telegram"
+              label="Ваш Telegrammm"
               placeholder="@sergey"
               multiline
               maxRows={4}
