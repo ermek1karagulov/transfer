@@ -74,14 +74,28 @@
     padding-left: 1.5rem;
   }
 
-  .txtTelegg {
-    width: 90%;
+  .divtelega {
+    display: flex;
+    justify-content: center;
+    width: 95.5%;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .formTop {
+    padding-left: 2rem;
+  }
+
+  .formBottom {
+    padding-top: 1rem;
+    padding-left: 2rem;
   }
 
   .divtelega {
     display: flex;
     justify-content: center;
-    width: 95.5%;
+    width: 80%;
     margin-left: 0.5rem;
   }
 }

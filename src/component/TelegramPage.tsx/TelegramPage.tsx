@@ -317,7 +317,6 @@ const TelegramPage = () => {
 
           <div className="divtelega">
             <TextField
-              className="txtTelegg"
               style={{ width: "100%" }}
               id="outlined-textarea"
               label="Ваш Telegram"
