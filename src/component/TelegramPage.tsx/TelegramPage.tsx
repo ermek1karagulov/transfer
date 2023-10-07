@@ -224,9 +224,9 @@ const TelegramPage = () => {
                 />
                 <FormControlLabel
                   style={{ fontSize: "5px" }}
-                  value="🏦Остальные банки(+тиньк. до 100т)"
+                  value="🏦Остальные банки"
                   control={<Radio />}
-                  label="🏦Остальные банки(+тиньк. до 100т)"
+                  label="🏦Остальные банки"
                 />
               </RadioGroup>
             </FormControl>
@@ -320,7 +320,7 @@ const TelegramPage = () => {
               // style={{ width: "90%" }}
               className="telegrammm"
               id="outlined-textarea"
-              label="Ваш Telegramtt"
+              label="Ваш Telegram"
               placeholder="@sergey"
               multiline
               maxRows={4}
