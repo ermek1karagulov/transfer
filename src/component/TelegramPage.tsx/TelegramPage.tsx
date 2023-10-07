@@ -152,7 +152,7 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1 },
+                "& .MuiTextField-root": { m: 0 },
               }}
               noValidate
               autoComplete="off"
@@ -162,7 +162,7 @@ const TelegramPage = () => {
                   id="outlined-basic"
                   label="Вы отправляете"
                   variant="outlined"
-                  style={{ width: "100%", marginRight: "1px" }}
+                  // style={{ width: "100%" }}
                   InputLabelProps={{
                     shrink: true,
                   }}
@@ -186,7 +186,7 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1 },
+                "& .MuiTextField-root": { m: 0 },
               }}
               noValidate
               autoComplete="off"
@@ -224,9 +224,9 @@ const TelegramPage = () => {
                 />
                 <FormControlLabel
                   style={{ fontSize: "5px" }}
-                  value="🏦Остальные банки(+Тинькофф до 100тыс.)"
+                  value="🏦Остальные банки(+тиньк. до 100т)"
                   control={<Radio />}
-                  label="🏦Остальные банки(+Тинькофф до 100т.)"
+                  label="🏦Остальные банки(+тиньк. до 100т)"
                 />
               </RadioGroup>
             </FormControl>
@@ -241,14 +241,14 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1 },
+                "& .MuiTextField-root": { m: 0 },
               }}
               noValidate
               autoComplete="off"
             >
               <div>
                 <TextField
-                  style={{ width: "100%", marginRight: "1px" }}
+                  // style={{ width: "100%" }}
                   id="outlined-basic"
                   label="Вы получаете"
                   defaultValue="Вы получаете"
@@ -278,7 +278,7 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1 },
+                "& .MuiTextField-root": { m: 0 },
               }}
               noValidate
               autoComplete="off"
@@ -349,7 +349,7 @@ const TelegramPage = () => {
 
           <div
             className="centerTextt"
-            style={{ padding: "1rem 1rem 0rem 0rem" }}
+            style={{ padding: "0rem 1rem 0rem 0rem" }}
           >
             {/* <div className="komission">
       Комиссия за перевод:

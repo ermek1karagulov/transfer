@@ -10,12 +10,12 @@
 }
 
 .formTop {
-  margin-left: 2.5rem;
+  margin-left: 1rem;
 }
 
 .formBottom {
   padding-top: 1rem;
-  margin-left: 2.5rem;
+  margin-left: 1rem;
 }
 
 .centerTextt {
@@ -51,8 +51,9 @@
 .divtelega {
   display: flex;
   justify-content: center;
-  width: 93.5%;
-  margin-left: 0.8rem;
+  /* width: 93.5%; */
+  /* margin-left: 0.8rem; */
+  margin-top: 1rem;
 }
 
 .wait {
@@ -65,36 +66,36 @@
 }
 
 .telegrammm {
-  width: 89%;
+  width: 95%;
 }
 
 @media (max-width: 405px) {
   .divtelega {
     display: flex;
     justify-content: center;
-    width: 97%;
-    margin-left: 0.3rem;
+    /* width: 97%; */
+    /* margin-left: 0.3rem; */
   }
 }
 
 @media (max-width: 382px) {
   .telegrammm {
-    width: 95%;
+    width: 97%;
   }
   .formTop {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 
   .formBottom {
     padding-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 
   .divtelega {
     display: flex;
     justify-content: center;
-    width: 95.5%;
-    margin-left: 0.5rem;
+    /* width: 95.5%; */
+    /* margin-left: 0.5rem; */
   }
 }
 
@@ -111,7 +112,10 @@
   .divtelega {
     display: flex;
     justify-content: center;
-    width: 90%;
-    margin-left: 0.5rem;
+    /* width: 90%; */
+    /* margin-left: 0.5rem; */
+  }
+  .telegrammm {
+    width: 100%;
   }
 }
