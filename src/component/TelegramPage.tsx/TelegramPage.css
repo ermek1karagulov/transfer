@@ -10,12 +10,12 @@
 }
 
 .formTop {
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 }
 
 .formBottom {
   padding-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 }
 
 .centerTextt {
@@ -64,14 +64,30 @@
   margin-top: 1rem;
 }
 
+.telegrammm {
+  width: 89%;
+}
+
+@media (max-width: 405px) {
+  .divtelega {
+    display: flex;
+    justify-content: center;
+    width: 97%;
+    margin-left: 0.3rem;
+  }
+}
+
 @media (max-width: 382px) {
+  .telegrammm {
+    width: 95%;
+  }
   .formTop {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
   }
 
   .formBottom {
     padding-top: 1rem;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
   }
 
   .divtelega {
@@ -84,12 +100,12 @@
 
 @media (max-width: 300px) {
   .formTop {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .formBottom {
     padding-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .divtelega {
