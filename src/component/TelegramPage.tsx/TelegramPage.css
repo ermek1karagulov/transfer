@@ -8,15 +8,15 @@
   justify-content: center;
   margin-top: 4rem;
 }
-/* 
+
 .formTop {
   margin-left: 1rem;
 }
 
 .formBottom {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   margin-left: 1rem;
-} */
+}
 
 .centerTextt {
   display: flex;
@@ -51,7 +51,25 @@
 .divtelega {
   display: flex;
   justify-content: center;
-  /* width: 93.5%; */
-  /* margin-left: 0.8rem; */
+  width: 94%;
+  margin-left: 0.9rem;
   margin-top: 1rem;
+}
+
+.divUf {
+  margin-left: 6px;
+}
+
+@media (max-width: 370px) {
+  .divUf {
+    margin-left: 0px;
+  }
+
+  .divtelega {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+  }
 }

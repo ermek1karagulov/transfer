@@ -148,12 +148,13 @@ const TelegramPage = () => {
               //   padding: "0rem 0rem 0rem 0rem",
               justifyContent: "center",
               width: "100%",
+              // padding: "1rem 1rem 0rem 0rem",
             }}
           >
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 0 },
+                "& .MuiTextField-root": { m: 1, width: "20ch" },
               }}
               noValidate
               autoComplete="off"
@@ -185,12 +186,13 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 0 },
+                "& .MuiTextField-root": { m: 1, width: "14ch" },
               }}
               noValidate
               autoComplete="off"
             >
               <TextField
+                style={{ width: "90%" }}
                 id="standard-select-currency"
                 label="валюта"
                 select
@@ -207,16 +209,17 @@ const TelegramPage = () => {
           </div>
 
           <div
+            className="divUf"
             style={{
               display: "flex",
-              padding: "1rem 0rem 0rem 0rem",
               justifyContent: "center",
+              // padding: "1rem 1rem 0rem 0rem",
             }}
           >
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 0 },
+                "& .MuiTextField-root": { m: 1, width: "20ch" },
               }}
               noValidate
               autoComplete="off"
@@ -251,7 +254,7 @@ const TelegramPage = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 0 },
+                "& .MuiTextField-root": { m: 1, width: "14ch" },
               }}
               noValidate
               autoComplete="off"
