@@ -70,12 +70,6 @@
 }
 
 @media (max-width: 405px) {
-  .divtelega {
-    display: flex;
-    justify-content: center;
-    /* width: 97%; */
-    /* margin-left: 0.3rem; */
-  }
 }
 
 @media (max-width: 382px) {
@@ -84,18 +78,6 @@
   }
   .formTop {
     margin-left: 0.5rem;
-  }
-
-  .formBottom {
-    padding-top: 1rem;
-    margin-left: 0.5rem;
-  }
-
-  .divtelega {
-    display: flex;
-    justify-content: center;
-    /* width: 95.5%; */
-    /* margin-left: 0.5rem; */
   }
 }
 
@@ -108,16 +90,6 @@
     padding-top: 1rem;
     margin-left: 1rem;
   }
-
-  .divtelega {
-    display: flex;
-    justify-content: center;
-    /* width: 90%; */
-    /* margin-left: 0.5rem; */
-  }
-  .telegrammm {
-    width: 100%;
-  }
 }
 
 @media (max-width: 250px) {
@@ -129,19 +101,9 @@
     padding-top: 1rem;
     margin-left: 0.5rem;
   }
-
-  .divtelega {
-    display: flex;
-    justify-content: center;
-    /* width: 90%; */
-    /* margin-left: 0.5rem; */
-  }
-  .telegrammm {
-    width: 70%;
-  }
 }
 
-@media (max-width: 200px) {
+@media (max-width: 250px) {
   .formTop {
     margin-left: 0.5rem;
   }
@@ -149,15 +111,5 @@
   .formBottom {
     padding-top: 1rem;
     margin-left: 0.5rem;
-  }
-
-  .divtelega {
-    display: flex;
-    justify-content: center;
-    /* width: 90%; */
-    /* margin-left: 0.5rem; */
-  }
-  .telegrammm {
-    width: 60%;
   }
 }

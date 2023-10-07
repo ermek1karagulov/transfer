@@ -345,7 +345,7 @@ const TelegramPage = () => {
             style={{ padding: "0rem 1rem 0rem 0rem" }}
           >
             <div className="minimalSumm">
-              *Минимальная сумма перевода:
+              *Минимальная сумма переводаh:
               <span
                 style={{
                   fontWeight: "600",
