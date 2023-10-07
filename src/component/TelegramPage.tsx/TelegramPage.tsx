@@ -360,7 +360,7 @@ const TelegramPage = () => {
       </span>
     </div> */}
             <div className="minimalSumm">
-              *Минимальная сумма перевода:
+              *Минимальная сумма переводаffff:
               <span
                 style={{
                   fontWeight: "600",
