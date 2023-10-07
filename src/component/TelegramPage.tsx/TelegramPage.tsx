@@ -162,7 +162,7 @@ const TelegramPage = () => {
                 id="outlined-basic"
                 label="Вы отправляете"
                 variant="outlined"
-                // style={{ width: "100%" }}
+                style={{ width: "100%" }}
                 InputLabelProps={{
                   shrink: true,
                 }}
@@ -217,7 +217,7 @@ const TelegramPage = () => {
                 <FormControlLabel
                   value="Сбербанк"
                   control={<Radio />}
-                  label="Сбербанк"
+                  label="Сбербанкhh"
                 />
                 <FormControlLabel
                   style={{ fontSize: "5px" }}
@@ -244,7 +244,7 @@ const TelegramPage = () => {
               autoComplete="off"
             >
               <TextField
-                // style={{ width: "100%" }}
+                style={{ width: "100%" }}
                 id="outlined-basic"
                 label="Вы получаете"
                 defaultValue="Вы получаете"
