@@ -300,13 +300,13 @@ const TelegramPage = () => {
                 <FormControlLabel
                   value="Сбербанк"
                   control={<Radio />}
-                  label="Сбербанкhh"
+                  label="Сбербанк"
                 />
                 <FormControlLabel
                   style={{ fontSize: "5px" }}
-                  value="🏦Остальные банки"
+                  value="🏦Остальные банки (+Тинькофф до 100тыс.)"
                   control={<Radio />}
-                  label="🏦Остальные банки"
+                  label="🏦Остальные банки  (+Тинькофф до 100тыс.)"
                 />
               </RadioGroup>
             </FormControl>
