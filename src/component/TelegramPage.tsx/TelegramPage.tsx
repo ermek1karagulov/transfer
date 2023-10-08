@@ -288,20 +288,6 @@ const TelegramPage = () => {
               </TextField>
             </Box>
           </div>
-
-          <div className="divtelega">
-            <TextField
-              style={{ width: "100%" }}
-              className="telegrammm"
-              id="outlined-textarea"
-              label="Ваш Telegram"
-              placeholder="@sergey"
-              multiline
-              maxRows={4}
-              value={telegramState}
-              onChange={(e) => telegramSetState(e.target.value)}
-            />
-          </div>
           <div className="formTop">
             <FormControl>
               {/* <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel> */}
@@ -325,6 +311,21 @@ const TelegramPage = () => {
               </RadioGroup>
             </FormControl>
           </div>
+
+          <div className="divtelega">
+            <TextField
+              style={{ width: "100%" }}
+              className="telegrammm"
+              id="outlined-textarea"
+              label="Ваш Telegram"
+              placeholder="@sergey"
+              multiline
+              maxRows={4}
+              value={telegramState}
+              onChange={(e) => telegramSetState(e.target.value)}
+            />
+          </div>
+
           <div className="formBottom">
             <FormControl>
               <RadioGroup
