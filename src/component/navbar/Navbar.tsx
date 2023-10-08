@@ -23,6 +23,7 @@ const drawerWidth = 240;
 const navItems = [
   { label: "О нас", link: "#onas" },
   { label: "FAQ", link: "#Fag" },
+  { label: "Услуги", link: "#uslugi" },
   { label: "Отзывы", link: "#otzyvy" },
   { label: "Связаться", link: "#svyaz" },
 ];

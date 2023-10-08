@@ -16,7 +16,7 @@ const mainroutes = () => {
       <div id="onas">
         <Information />
       </div>
-      <div>
+      <div id="uslugi">
         <Services />
       </div>
       <div id="Fag">
