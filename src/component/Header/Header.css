@@ -67,6 +67,25 @@
   width: 50%;
 }
 
+@media (max-width: 1100px) {
+  .text {
+    font-size: 1.6rem;
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .theme {
+    font-size: 37px;
+    color: #8394b0;
+    text-align: start;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .mainDiv {
     margin-top: 0px;
@@ -118,6 +137,105 @@
 
   .trrrr {
     width: 50%;
+  }
+}
+@media (max-width: 940px) {
+  .text {
+    font-size: 1.5rem;
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    /* text-wrap: nowrap; */
+    /* margin-left: 1rem; */
+  }
+
+  .theme {
+    font-size: 35px;
+    color: #8394b0;
+    text-align: start;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5rem;
+    /* margin-left: 1rem; */
+  }
+}
+
+@media (max-width: 820px) {
+  .text {
+    font-size: 1.7rem;
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    /* text-wrap: nowrap; */
+    /* margin-left: 1rem; */
+  }
+
+  .theme {
+    font-size: 30px;
+    color: #8394b0;
+    text-align: start;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5rem;
+    /* margin-left: 1rem; */
+  }
+
+  .bottomTextFiled {
+    display: flex;
+    width: 90%;
+    /* padding-left: 0.6rem; */
+  }
+}
+
+@media (max-width: 1200px) {
+  .theme {
+    font-size: 32px;
+    color: #8394b0;
+    text-align: start;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5rem;
+    /* margin-left: 1rem; */
+  }
+}
+
+@media (max-width: 720px) {
+  .text {
+    font-size: 1.5rem;
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    /* text-wrap: nowrap; */
+    /* margin-left: 1rem; */
+  }
+
+  .miniMainDiv {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 0rem;
+    height: 500px;
+  }
+
+  .theme {
+    font-size: 25px;
+    color: #8394b0;
+    text-align: start;
+    text-wrap: wrap;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5rem;
+    /* margin-left: 1rem; */
+  }
+
+  .bottomTextFiled {
+    display: flex;
+    width: 80%;
+    /* padding-left: 0.6rem; */
   }
 }
 

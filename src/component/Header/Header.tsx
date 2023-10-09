@@ -34,7 +34,7 @@ const Header = () => {
             custom={2}
             variants={textAnimation}
           >
-            Мгновенные денежные переводы в Зарубеж!
+            Мгновенные денежные переводы в зарубеж!
           </motion.h2>
           <motion.div
             className="text"
