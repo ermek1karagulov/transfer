@@ -19,7 +19,11 @@ interface Props {
   window?: () => Window;
 }
 
-const drawerWidth = 240;
+let style = {
+  width: "100%",
+};
+
+const drawerWidth = style;
 const navItems = [
   { label: "О нас", link: "#onas" },
   { label: "Услуги", link: "#uslugi" },
@@ -44,7 +48,13 @@ export default function Navbar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <a style={{ textDecoration: "none" }} href={item.link}>
+          <a
+            style={{
+              textDecoration: "none",
+              color: "black",
+            }}
+            href={item.link}
+          >
             <ListItem key={item.label} disablePadding>
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary={item.label} />
@@ -82,7 +92,7 @@ export default function Navbar(props: Props) {
             onClick={handleDrawerToggle}
             sx={{ ml: -2, display: { sm: "none" } }}
           >
-            <MenuIcon />
+            <MenuIcon style={{ color: "black" }} />
           </IconButton>
 
           <div style={{ flexGrow: 1 }} className="cshwww">
@@ -95,7 +105,7 @@ export default function Navbar(props: Props) {
           >
             {navItems.map((item) => (
               <a style={{ textDecoration: "none" }} href={item.link}>
-                <Button key={item.label} sx={{ color: "#fff" }}>
+                <Button key={item.label} sx={{ color: "black" }}>
                   {item.label}
                 </Button>
               </a>

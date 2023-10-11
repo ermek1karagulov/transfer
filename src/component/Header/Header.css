@@ -258,7 +258,8 @@
   }
   .trrrr {
     width: 100%;
-    margin-top: 11rem;
+    /* margin-top: 11rem; */
+    padding-top: 11rem;
   }
 
   .mainTwoTextFiled {
@@ -267,13 +268,14 @@
 
   .text {
     font-size: 1rem;
-    width: 95%;
+    width: 50%;
     color: #444444;
     text-align: center;
     font-weight: 400;
     display: flex;
     justify-content: center;
-    padding-left: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 
   .pharagraf {
@@ -283,18 +285,27 @@
 
   .theme {
     width: 100%;
-    font-size: 25px;
+    font-size: 30px;
     color: #012970;
     text-align: center;
     text-wrap: wrap;
     font-family: "Open Sans", sans-serif;
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
   }
 
   .bottomTextFiled {
     display: flex;
     width: 100%;
     padding-left: 0.6rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .trrrr {
+    width: 100%;
+    /* margin-top: 11rem; */
+    padding-top: 17rem;
   }
 }
