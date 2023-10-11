@@ -61,13 +61,18 @@ export default function Navbar(props: Props) {
 
   return (
     <Box
+      bgcolor="red"
       sx={{
         display: "flex",
         background: "#fbfbfb",
       }}
     >
       <CssBaseline />
-      <AppBar component="nav" style={{ textDecoration: "none" }}>
+      <AppBar
+        // color="primary"
+        component="nav"
+        style={{ textDecoration: "none", background: "white" }}
+      >
         <Toolbar>
           <IconButton
             className="btnIcon"
@@ -81,7 +86,9 @@ export default function Navbar(props: Props) {
           </IconButton>
 
           <div style={{ flexGrow: 1 }} className="cshwww">
-            <span className="ceshGoen">CashGoen</span>
+            <span className="ceshGoen" style={{ color: "blue" }}>
+              CashGoen
+            </span>
           </div>
           <Box
             sx={{ display: { xs: "none", sm: "block", marginRight: "2rem" } }}
@@ -98,7 +105,7 @@ export default function Navbar(props: Props) {
       </AppBar>
       <nav style={{ textDecoration: "none" }}>
         <Drawer
-          style={{ marginRight: "7rem" }}
+          style={{ marginRight: "7rem", color: "blue" }}
           container={container}
           variant="temporary"
           open={mobileOpen}

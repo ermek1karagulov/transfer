@@ -114,7 +114,7 @@ const TelegramPage = () => {
           sell: `${inputData.sell}${CurrencyType.RUB}`,
           buy: `${inputData.buy}${selectedBuyCurrency}`,
           telegram: `${telegramState}`,
-          byUsing: `${value}`,
+          through: `${value}`,
           karta: `${valuet}`,
         },
       });
