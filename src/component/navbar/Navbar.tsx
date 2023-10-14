@@ -14,6 +14,13 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import "./Navbar.css";
+// @ts-ignore
+import logo from "./../img/cashgoen-logo.png";
+// @ts-ignore
+import nazad from "./../img/nazad.svg";
+// @ts-ignore
+import logoPhone from "./../img/cashgoen logo circle.png";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 interface Props {
   window?: () => Window;
@@ -35,15 +42,35 @@ const navItems = [
 export default function Navbar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const { width } = useWindowSize();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        <span className="ceshGoen">CashGoen</span>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{ textAlign: "center", boxShadow: "none" }}
+    >
+      <Typography sx={{ my: 2 }} style={{ height: "20%", boxShadow: "none" }}>
+        <span
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: "2.5rem",
+          }}
+        >
+          <img src={nazad} alt="" style={{ marginLeft: "2rem" }} />
+          <img
+            src={logoPhone}
+            alt=""
+            style={{
+              width: "120px",
+              height: "120px",
+            }}
+          />
+        </span>
       </Typography>
       <Divider />
       <List>
@@ -51,13 +78,16 @@ export default function Navbar(props: Props) {
           <a
             style={{
               textDecoration: "none",
-              color: "black",
+              color: "rgb(1, 41, 112)",
             }}
             href={item.link}
           >
             <ListItem key={item.label} disablePadding>
               <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary={item.label} />
+                <ListItemText
+                  primary={item.label}
+                  style={{ marginTop: "1rem", fontWeight: "700" }}
+                />
               </ListItemButton>
             </ListItem>
           </a>
@@ -71,17 +101,21 @@ export default function Navbar(props: Props) {
 
   return (
     <Box
-      bgcolor="red"
       sx={{
         display: "flex",
-        background: "#fbfbfb",
       }}
     >
       <CssBaseline />
       <AppBar
         // color="primary"
         component="nav"
-        style={{ textDecoration: "none", background: "white" }}
+        style={{
+          textDecoration: "none",
+          background: "white",
+          border: "none",
+          height: "60px",
+          boxShadow: "0px 1px 1px -1px black",
+        }}
       >
         <Toolbar>
           <IconButton
@@ -90,22 +124,57 @@ export default function Navbar(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ ml: -2, display: { sm: "none" } }}
+            sx={{ ml: 2.5, display: { sm: "none" } }}
           >
             <MenuIcon style={{ color: "black" }} />
           </IconButton>
 
           <div style={{ flexGrow: 1 }} className="cshwww">
             <span className="ceshGoen" style={{ color: "blue" }}>
-              CashGoen
+              {width > 600 ? (
+                <img
+                  src={logo}
+                  alt=""
+                  style={{ width: "250px", height: "250px", marginTop: "5px" }}
+                />
+              ) : (
+                <img
+                  src={logoPhone}
+                  alt=""
+                  style={{
+                    width: "110px",
+                    height: "110px",
+                    marginTop: "5px",
+                    marginLeft: "0px",
+                  }}
+                />
+              )}
             </span>
           </div>
           <Box
             sx={{ display: { xs: "none", sm: "block", marginRight: "2rem" } }}
           >
             {navItems.map((item) => (
-              <a style={{ textDecoration: "none" }} href={item.link}>
-                <Button key={item.label} sx={{ color: "black" }}>
+              <a
+                style={{
+                  textDecoration: "none",
+                  background:
+                    item.label === "Связаться" ? "rgb(65, 84, 241)" : "",
+                  borderRadius: "5px",
+                  textAlign: "center",
+                }}
+                href={item.link}
+              >
+                <Button
+                  key={item.label}
+                  sx={{
+                    color:
+                      item.label === "Связаться" ? "white" : "rgb(1, 41, 112)",
+                  }}
+                  style={{
+                    width: item.label === "Связаться" ? "120px" : "",
+                  }}
+                >
                   {item.label}
                 </Button>
               </a>
@@ -113,9 +182,16 @@ export default function Navbar(props: Props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <nav style={{ textDecoration: "none" }}>
+      <nav
+        style={{
+          textDecoration: "none",
+        }}
+      >
         <Drawer
-          style={{ marginRight: "7rem", color: "blue" }}
+          style={{
+            marginRight: "7rem",
+            color: "blue",
+          }}
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -131,6 +207,7 @@ export default function Navbar(props: Props) {
             },
           }}
         >
+          {/* <MenuIcon style={{ color: "black" }} /> */}
           {drawer}
         </Drawer>
       </nav>
