@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 .mainDiv {
   margin-top: 0px;
-  /* background-image: url("https://avatars.mds.yandex.net/i?id=08302abda9619cad06c996b32ae59cdc7e00bebb-9863357-images-thumbs&n=13"); */
-  /* background-repeat: no-repeat;
-  background-size: 355vh; */
+  background-image: url("https://conlybus.com/static/img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 210vh;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -90,9 +91,9 @@
   .mainDiv {
     margin-top: 0px;
     /* background: white; */
-    /* background-image: url("https://avatars.mds.yandex.net/i?id=08302abda9619cad06c996b32ae59cdc7e00bebb-9863357-images-thumbs&n=13");
-    background-repeat: no-repeat;
-    background-size: 355vh; */
+    /* background-image: url("");
+    background-repeat: no-repeat; */
+    /* background-size: 355vh;  */
     height: 100vh;
   }
 
@@ -203,6 +204,12 @@
 }
 
 @media (max-width: 720px) {
+  .mainDiv {
+    background-image: url("https://conlybus.com/static/img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 180vh;
+    background-attachment: fixed;
+  }
   .text {
     font-size: 1.5rem;
     color: #444444;
@@ -238,9 +245,7 @@
 
 @media (max-width: 600px) {
   .mainDiv {
-    margin-top: 0px;
-    /* background-image: url("https://avatars.mds.yandex.net/i?id=08302abda9619cad06c996b32ae59cdc7e00bebb-9863357-images-thumbs&n=13");
-    background-size: 150vh; */
+    background-image: none;
   }
 
   .miniMainDiv {

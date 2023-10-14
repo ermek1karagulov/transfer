@@ -123,26 +123,30 @@ export default function Navbar(props: Props) {
           <div style={{ flexGrow: 1 }} className="cshwww">
             <span className="ceshGoen" style={{ color: "blue" }}>
               {width > 600 ? (
-                <img
-                  src={logo}
-                  alt=""
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    marginTop: "5px",
-                  }}
-                />
+                <a href="/">
+                  <img
+                    src={logo}
+                    alt=""
+                    style={{
+                      width: "250px",
+                      height: "250px",
+                      marginTop: "5px",
+                    }}
+                  />
+                </a>
               ) : (
-                <img
-                  src={logoPhone}
-                  alt=""
-                  style={{
-                    width: "110px",
-                    height: "110px",
-                    marginTop: "5px",
-                    // marginLeft: "0px",
-                  }}
-                />
+                <a href="/">
+                  <img
+                    src={logoPhone}
+                    alt=""
+                    style={{
+                      width: "110px",
+                      height: "110px",
+                      marginTop: "5px",
+                      // marginLeft: "0px",
+                    }}
+                  />
+                </a>
               )}
             </span>
           </div>
