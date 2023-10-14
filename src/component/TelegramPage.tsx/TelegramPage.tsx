@@ -211,7 +211,7 @@ const TelegramPage = () => {
             style={{
               display: "flex",
               justifyContent: "center",
-              // padding: "1rem 1rem 0rem 0rem",
+              width: "100%",
             }}
           >
             <Box
@@ -232,21 +232,6 @@ const TelegramPage = () => {
                   shrink: true,
                 }}
                 value={inputData.buy.toFixed(2)}
-                // onChange={(e) => {
-                //   //@ts-ignore
-                //   if (!/\d+/.test(Number(e.target.value))) return;
-
-                //   const som = Number(e.target.value) * rate[selectedBuyCurrency];
-                //   const converted = som
-                //     ? Number(som) / rate[CurrencyType.RUB]
-                //     : 0;
-
-                //   setInputData((v) => ({
-                //     ...v,
-                //     buy: +e.target.value,
-                //     sell: converted + (converted / 100) * 5,
-                //   }));
-                // }}
               />
             </Box>
             <Box
@@ -259,6 +244,7 @@ const TelegramPage = () => {
             >
               <TextField
                 id="outlined-select-currency-native"
+                style={{ width: "90%" }}
                 select
                 label="валюта"
                 defaultValue="РУБ"
