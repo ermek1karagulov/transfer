@@ -54,23 +54,25 @@ export default function Navbar(props: Props) {
       sx={{ textAlign: "center", boxShadow: "none" }}
     >
       <Typography sx={{ my: 2 }} style={{ height: "20%", boxShadow: "none" }}>
-        <span
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            marginBottom: "2.5rem",
-          }}
-        >
-          <img src={nazad} alt="" style={{ marginLeft: "2rem" }} />
-          <img
-            src={logoPhone}
-            alt=""
+        <a href="/" style={{ textDecoration: "none" }}>
+          <span
             style={{
-              width: "120px",
-              height: "120px",
+              display: "flex",
+              justifyContent: "space-between",
+              marginBottom: "2.5rem",
             }}
-          />
-        </span>
+          >
+            <img src={nazad} alt="" style={{ marginLeft: "2rem" }} />
+            <img
+              src={logoPhone}
+              alt=""
+              style={{
+                width: "120px",
+                height: "120px",
+              }}
+            />
+          </span>
+        </a>
       </Typography>
       <Divider />
       <List>
@@ -118,24 +120,17 @@ export default function Navbar(props: Props) {
         }}
       >
         <Toolbar>
-          <IconButton
-            className="btnIcon"
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ ml: 2.5, display: { sm: "none" } }}
-          >
-            <MenuIcon style={{ color: "black" }} />
-          </IconButton>
-
           <div style={{ flexGrow: 1 }} className="cshwww">
             <span className="ceshGoen" style={{ color: "blue" }}>
               {width > 600 ? (
                 <img
                   src={logo}
                   alt=""
-                  style={{ width: "250px", height: "250px", marginTop: "5px" }}
+                  style={{
+                    width: "250px",
+                    height: "250px",
+                    marginTop: "5px",
+                  }}
                 />
               ) : (
                 <img
@@ -145,12 +140,22 @@ export default function Navbar(props: Props) {
                     width: "110px",
                     height: "110px",
                     marginTop: "5px",
-                    marginLeft: "0px",
+                    // marginLeft: "0px",
                   }}
                 />
               )}
             </span>
           </div>
+          <IconButton
+            className="btnIcon"
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 3, display: { sm: "none" } }}
+          >
+            <MenuIcon style={{ color: "black" }} />
+          </IconButton>
           <Box
             sx={{ display: { xs: "none", sm: "block", marginRight: "2rem" } }}
           >

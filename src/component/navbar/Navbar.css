@@ -5,7 +5,7 @@
 @media (max-width: 600px) {
   .cshwww {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     /* margin-right: 1rem; */
   }
 }
