@@ -18,14 +18,11 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 // import "./ButtonStart.css";
 import { toast } from "react-toastify";
-import Navbar from "../navbar/Navbar";
-
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
-import Navb from "./Navb";
+import Navbar from "../navbar/Navbar";
 
 enum TransactionType {
   SELL = "SELL",
@@ -131,8 +128,8 @@ const TelegramPage = () => {
   }
   return (
     <div>
-      <div>
-        <Navb />
+      <div style={{ marginBottom: "2rem" }}>
+        <Navbar />
       </div>
       <div className="mainTextFieldDivv">
         <div
@@ -140,6 +137,7 @@ const TelegramPage = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            marginTop: "2rem",
           }}
         >
           <div
