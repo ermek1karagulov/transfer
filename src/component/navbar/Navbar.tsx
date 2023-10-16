@@ -169,6 +169,7 @@ export default function Navbar(props: Props) {
                   textDecoration: "none",
                   background:
                     item.label === "Связаться" ? "rgb(65, 84, 241)" : "",
+                  paddingBottom: item.label === "Связаться" ? "2px" : "",
                   borderRadius: "5px",
                   textAlign: "center",
                 }}
