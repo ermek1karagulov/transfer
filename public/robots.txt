@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://cashgoen.vercel.app/sitemap.xml
+Sitemap: https://cashgoen.com/sitemap.xml
