@@ -26,7 +26,7 @@ const WhatAboutUs = () => {
         <div className="otzyvy">Отзывы</div>
         <div className="whatAboutUs">Что про нас говорят</div>
         <a
-          href="https://www.trustpilot.com/review/conlybus.com?utm_medium=trustbox&utm_source=MicroReviewCount"
+          href="https://www.trustpilot.com/review/cashgoen.com"
           style={{ textDecoration: "none" }}
           target="_blak"
         >
@@ -34,7 +34,7 @@ const WhatAboutUs = () => {
             className="seeOur"
             style={{ textAlign: "center", display: "flex" }}
           >
-            See our 26 reviews on⠀
+            Посмотреть наши отзывы на
             <span>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Trustpilot_Logo_%282022%29.svg/1280px-Trustpilot_Logo_%282022%29.svg.png"
