@@ -17,6 +17,7 @@
     "@types/node": "^16.18.52",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "@vercel/analytics": "^1.1.1",
     "axios": "^1.5.1",
     "framer-motion": "^10.16.4",
     "nodemailer": "^6.9.5",
