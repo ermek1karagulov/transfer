@@ -14,7 +14,6 @@
 }
 
 .formBottom {
-  /* padding-top: 1rem; */
   margin-left: 1rem;
 }
 
@@ -54,10 +53,6 @@
   width: 94%;
   margin-left: 0.9rem;
   margin-top: 1rem;
-}
-
-.divUf {
-  /* margin-left: 6px; */
 }
 
 @media (max-width: 370px) {
