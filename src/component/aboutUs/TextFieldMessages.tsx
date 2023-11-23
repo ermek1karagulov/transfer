@@ -22,7 +22,6 @@ export default function TextFieldMessages() {
         //@ts-ignore
         chat_id: 886751147,
         parse_mode: "html",
-        // message: <div>siuuuu</div>,
         text: "erlaaan",
       });
       console.log(res);
