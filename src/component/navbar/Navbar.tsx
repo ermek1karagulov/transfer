@@ -53,6 +53,7 @@ export default function Navbar(props: Props) {
       onClick={handleDrawerToggle}
       sx={{ textAlign: "center", boxShadow: "none" }}
     >
+      {/* ;;;;;;; */}
       <Typography sx={{ my: 2 }} style={{ height: "20%", boxShadow: "none" }}>
         <a href="/" style={{ textDecoration: "none" }}>
           <span
