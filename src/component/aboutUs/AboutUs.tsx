@@ -19,7 +19,7 @@ const AboutUs = () => {
       transition: { delay: custom * 0.3 },
     }),
   };
-  kkoolll;
+
   return (
     <motion.div
       initial="hidden"
